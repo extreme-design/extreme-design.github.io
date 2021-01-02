@@ -1,0 +1,14 @@
+/*!
+ * Start Bootstrap - The Big Picture (https://startbootstrap.com/template/the-big-picture)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
+ */
+ @font-face {
+   font-family: 'BebasNeue';
+   src: url(font/bebas_neue/BebasNeue-Regular.woff);
+ }
+
+ html, body {
+   width: 100%;
+   height: 100%;
+ }
