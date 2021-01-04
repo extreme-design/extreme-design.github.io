@@ -1,0 +1,16 @@
+{
+  "RequirementFormalization": {
+    "click": {
+      "type": "svg",
+      "path": "img/schema2.svg",
+			"viewBox": "0 0 1602.76 855.227"
+    }
+  },
+	"AlphaTesting": {
+		"click": {
+			"type": "svg",
+			"path": "img/alphatesting.svg",
+			"viewBox": "0 0 1602.76 855.227"
+		}
+	}
+}

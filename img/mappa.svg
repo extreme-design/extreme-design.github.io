@@ -19,12 +19,14 @@
 			<![CDATA[
 			@font-face {
 				font-family: 'BebasNeue';
-				src: url("../font/bebas_neue/BebasNeue-Regular.woff");
+				src: url("font/bebas_neue/BebasNeue-Regular.woff");
 			}
 
 			]]>
 		</style>
 	</defs>
+
+
 
 	<g>
 		<circle fill="#E83360" cx="397.252" cy="131.299" r="21.731"/>
@@ -204,11 +206,11 @@
 			</g>
 		</g>
 	</g>
-	<polyline fill="#A786BC" stroke="#A685BC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	<polyline class="RequirementFormalization" fill="#A786BC" stroke="#A685BC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 	734.264,100.925 519.404,100.293 502.002,217.369 736.559,186.569 734.264,100.925 "/>
-	<polyline fill="none" stroke="#050A0C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	<polyline fill="none"  class="RequirementFormalization" stroke="#050A0C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 	495.15,210.206 726.921,195.802 739.673,98.388 520.986,105.454 495.15,210.206 "/>
-	<g>
+	<g class="RequirementFormalization">
 		<text transform="matrix(1 0 0 1 550.2794 144.8161)">
 			<tspan x="0" y="0" fill="#FFFFFF" font-family="'BebasNeue'" font-size="32.8988">Requirement</tspan>
 			<tspan x="-9.031" y="39.479" fill="#FFFFFF" font-family="'BebasNeue'" font-size="32.8988">formalization</tspan>
@@ -508,11 +510,11 @@
 			c-0.332,0.155-0.7,0.229-1.052,0.341C1091.859,338.351,1090.031,338.372,1088.202,338.393z"/>
 		</g>
 	</g>
-	<polyline fill="#E30D15" stroke="#E30F19" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	<polyline class="AlphaTesting" fill="#E30D15" stroke="#E30F19" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 	1230.72,638.443 981.278,626.934 978.204,529.446 1211.773,534.604 1230.72,638.072 "/>
-	<polyline fill="none" stroke="#050A0C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	<polyline class="AlphaTesting" fill="none" stroke="#050A0C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 	980.062,529.349 1227.554,524.829 1239.509,629.012 982.588,627.314 980.062,529.349 "/>
-	<g>
+	<g class="AlphaTesting">
 		<text transform="matrix(1 0 0 1 1032.1975 589.5175)" fill="#FFFFFF" font-family="'BebasNeue'" font-size="32.8988">alpha Testing</text>
 	</g>
 	<g>
