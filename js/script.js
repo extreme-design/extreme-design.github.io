@@ -1,15 +1,16 @@
-WebView.getSettings().setJavaScriptEnabled(true);
 
-var enlarge = "<span class=\"dot\">	<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-arrows-angle-expand\" viewBox=\"0 0 16 16\">		<path fill=\"white\" fill-rule=\"evenodd\" d=\"M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z\" />	</svg></span>";
+//var enlarge = "<span class=\"dot\">	<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-arrows-angle-expand\" viewBox=\"0 0 16 16\">		<path fill=\"white\" fill-rule=\"evenodd\" d=\"M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z\" />	</svg></span>";
 
 
 window.addEventListener("load", function() {
-  loadSVG("img/mappa.svg", $("#svg-object"), "0 0 1280 680", mapCallBack);
+  loadSVG("img/mappa2.svg", $("#svg-object"), mapCallBack);
+
+	//loadSVG("img/mappa.svg", $("#svg-object"), "0 0 1280 680", mapCallBack);
   //loadSVG("img/mappa.svg", $("#svg-min"), "0 0 1280 680");
   //loadSVG("img/mappa.svg", $("#svg-logo"), "0 0 1280 680");
 });
 
-function mapCallBack(p) {
+function mapCallBack() {
   $.getJSON("interaction.json", function(data) {
     for (var key in data) {
       if (data.hasOwnProperty(key)) {
@@ -18,6 +19,7 @@ function mapCallBack(p) {
       }
     }
   });
+	$("#reduce").attr("visibility","hidden");
 }
 
 function makeClassActionable(clazz) {
@@ -38,21 +40,22 @@ function setAction(clazz, action) {
           $("#svg-object svg").remove();
         } else {
           $("#svg-object svg").appendTo("#svg-min");
-					$("#svg-min").parent().append(enlarge);
-					$(".dot").css("cursor","pointer");
+					console.log("Set visibility");
+					$("#reduce").attr("visibility","visible");
+/*
 					$(".dot").on("click",function(){
 						$("#svg-object svg").remove();
-						$(".dot").remove();
+						$("#reduce").attr("visibility","hidden");
 						$("#svg-min svg").appendTo("#svg-object");
-					});
+					});*/
         }
-        loadSVG(action[e]["path"], $("#svg-object"), action[e]["viewBox"], mapCallBack);
+        loadSVG(action[e]["path"], $("#svg-object"), mapCallBack);
       });
     }
   }
 }
 
-function loadSVG(file, elem, viewBox, callback) {
+function loadSVG(file, elem, callback) {
   elem.load(file, function() {
     var svg = elem.find("svg");
     svg.removeAttr("enable-background");
@@ -60,9 +63,8 @@ function loadSVG(file, elem, viewBox, callback) {
     svg.removeAttr("height");
     svg.removeAttr("x");
     svg.removeAttr("y");
-    svg.attr("viewBox", viewBox);
     svg.attr("height", "100%");
     svg.attr("width", "100%");
-    callback("BLA");
+    callback();
   });
 }
