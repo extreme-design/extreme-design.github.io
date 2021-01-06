@@ -43,7 +43,7 @@
    inkscape:window-maximized="1"
    inkscape:current-layer="layer1" />
 
-	<defs
+	<!--defs
    id="defs1766"><rect
    x="1309.9581"
    y="664.88153"
@@ -60,13 +60,18 @@
    id="style1764">
 			<![CDATA[
 			@font-face {
-				font-family: 'BebasNeue';
-				src: url("font/bebas_neue/BebasNeue-Regular.woff");
+				font-family: 'Bebas Neue';
+				src: url("font/bebas_neue/Bebas Neue-Regular.woff");
 			}
 
 			]]>
 		</style>
+	</defs-->
+	<defs>
+	<style type="text/css">@import url('http://fonts.googleapis.com/css?family=Bebas+Neue');</style>
 	</defs>
+
+
 
 
 
@@ -122,13 +127,13 @@
    x="101.88248"
    y="72.216217"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="tspan1782">Requirement</tspan>		 <tspan
    x="112.29549"
    y="111.69522"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="tspan1784">collection</tspan>	</text>
 	<g
@@ -307,13 +312,13 @@
    x="0"
    y="0"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="tspan1856">Requirement</tspan>			 <tspan
    x="-9.0310001"
    y="39.479"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="tspan1858">formalization</tspan>		</text>
 	</g>
@@ -595,13 +600,13 @@
    x="0"
    y="0"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="tspan1982">Modules</tspan>			 <tspan
    x="-25.101999"
    y="39.479"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="tspan1984">development</tspan>		</text>
 	<text
@@ -629,6 +634,7 @@
      cy="612.53986"
      rx="28.292831"
      ry="25.463549"
+		 visibility="hidden"
      inkscape:label="reduce" /></g>
 	<g
    id="g1998"
@@ -680,7 +686,7 @@
 		<text
    transform="translate(1032.1975,589.5175)"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="text2004">alpha Testing</text>
 	</g>
@@ -857,13 +863,13 @@
    x="0"
    y="0"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="tspan2084">Refactoring</tspan>			 <tspan
    x="-20.363001"
    y="39.479"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="tspan2086">and integration</tspan>		</text>
 	</g>
@@ -1011,7 +1017,7 @@
 		<text
    transform="translate(101.911,607.1533)"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="text2152">Beta Testing</text>
 	</g>
@@ -1116,13 +1122,13 @@
    x="0"
    y="0"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="tspan2196">Release and</tspan>			 <tspan
    x="7.5180001"
    y="39.479"
    fill="#ffffff"
-   font-family="BebasNeue"
+   font-family="Bebas Neue"
    font-size="32.8988px"
    id="tspan2198">versioning</tspan>		</text>
 	</g>
