@@ -1,3 +1,4 @@
+var close ="<span class='close'>x</span>"
 window.addEventListener("load", function() {
   //mapCallBack(svg);
   loadSVGDOM("img/mappa2.svg","main-content","svg-main-content");
@@ -45,6 +46,16 @@ function makeClassActionableJQuery(clazz, svg) {
   });
 }
 
+function makeSelectorActionableJQuery(selector) {
+  $(selector).css("cursor", "pointer");
+  $(selector).on("mouseenter", function() {
+    $(selector).attr("opacity", "0.8");
+  });
+  $(selector).on("mouseleave", function() {
+    $(selector).attr("opacity", "1.0");
+  });
+}
+
 function setAttribute(svg, clazz, attribute, value) {
   var svg2 = svg.getElementsByClassName(clazz);
   for (var i = 0; i < svg2.length; i++) {
@@ -81,7 +92,13 @@ function setActionJQuery(clazz, action, svg) {
           $("#main-content svg").remove();
         } else {
           $("#main-content svg").appendTo("#min");
-          $("#reduce").attr("visibility", "visible");
+					$( "#min" ).prepend( close);
+					makeSelectorActionableJQuery("#min .close");
+					$("#min .close").on("click",function(){
+						$("#main-content svg").remove();
+						$("#"+$(this).parent().attr("id") + " svg").appendTo("#main-content")
+						$("#min .close").remove();
+					});
         }
         loadSVGDOM(action[e]["path"], "#min", mapCallBack);
       });
