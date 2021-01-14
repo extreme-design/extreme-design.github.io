@@ -19,30 +19,6 @@
 		height: 75%;
 }
 
-.dot {
-	/*
-  height: 32px;
-  width: 32px;
-	padding-left:8px;
-	padding-top:2px;*/
-
-	height: 32px;
-  width: 32px;
-	padding-left:8px;
-	padding-top:2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-	color: blue;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-
-.close {
-    float:right;
-    display:inline-block;
-    padding:2px 5px;
-    background:#ccc;
+#min {
+	position:relative;
 }

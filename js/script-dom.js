@@ -1,49 +1,28 @@
-var close ="<span class='close'>x</span>"
+var close = `<button class="close"><i class="fas fa-window-minimize"></i></button>`;
 window.addEventListener("load", function() {
-  //mapCallBack(svg);
-  loadSVGDOM("img/mappa2.svg","main-content","svg-main-content");
-	//setInteraction(document.getElementById("svg-main-content").contentDocument);
-	mapCallBack($("main-content"))
-
+  loadSVG("img/mappa2.svg", $("#main-content"), mapCallBack);
 });
 
 var interaction;
-var makeClassActionable = makeClassActionableJQuery;
-var setAction = setActionJQuery;
 
-function setInteraction(inter, svg) {
+function setInteraction(inter) {
   for (var key in inter) {
     if (inter.hasOwnProperty(key)) {
-      makeClassActionable(key, svg);
-      setAction(key, inter[key], svg);
+      makeSelectorActionableJQuery("." + key);
+      setActionJQuery(key, inter[key]);
     }
   }
 }
 
-function mapCallBack(svg) {
+function mapCallBack() {
   if (interaction == undefined) {
     $.getJSON("interaction.json", function(data) {
       interaction = data;
-      setInteraction(interaction, svg);
+      setInteraction(interaction);
     });
   } else {
-    setInteraction(interaction, svg);
+    setInteraction(interaction);
   }
-  //setAttributeOfElementById("reduce", svg, "visibility", "hidden");
-}
-
-function setAttributeOfElementById(id, svg, attribute, value) {
-  svg.getElementById(id).setAttribute(attribute, value);
-}
-
-function makeClassActionableJQuery(clazz, svg) {
-  $("." + clazz).css("cursor", "pointer");
-  $("." + clazz).on("mouseenter", function() {
-    $("." + clazz).attr("opacity", "0.8");
-  });
-  $("." + clazz).on("mouseleave", function() {
-    $("." + clazz).attr("opacity", "1.0");
-  });
 }
 
 function makeSelectorActionableJQuery(selector) {
@@ -56,82 +35,51 @@ function makeSelectorActionableJQuery(selector) {
   });
 }
 
-function setAttribute(svg, clazz, attribute, value) {
-  var svg2 = svg.getElementsByClassName(clazz);
-  for (var i = 0; i < svg2.length; i++) {
-    svg2[i].setAttribute(attribute, value);
-  }
-}
 
-function elementMouseEnter(svg, clazz) {
-  setAttribute(svg, clazz, "opacity", "0.8");
-}
-
-function elementMouseLeave(svg, clazz) {
-  setAttribute(svg, clazz, "opacity", "1.0");
-}
-
-function makeClassActionableDOM(clazz, svg) {
-  var elems = svg.getElementsByClassName(clazz);
-  for (var i = 0; i < elems.length; i++) {
-    elems[i].style.cursor = "pointer";
-    elems[i].addEventListener("mouseenter", function(event) {
-      elementMouseEnter(svg, clazz);
-    }, false);
-    elems[i].addEventListener("mouseleave", function(event) {
-      elementMouseLeave(svg, clazz);
-    }, false);
-  }
-}
 
 function setActionJQuery(clazz, action, svg) {
   for (var e in action) {
     if (action[e]["type"] == "svg") {
       $("." + clazz).on(e, function() {
-        if ($("#min svg").length > 0) {
-          $("#main-content svg").remove();
-        } else {
-          $("#main-content svg").appendTo("#min");
-					$( "#min" ).prepend( close);
-					makeSelectorActionableJQuery("#min .close");
-					$("#min .close").on("click",function(){
-						$("#main-content svg").remove();
-						$("#"+$(this).parent().attr("id") + " svg").appendTo("#main-content")
-						$("#min .close").remove();
-					});
-        }
-        loadSVGDOM(action[e]["path"], "#min", mapCallBack);
+
+        var isInMainContent = $(this).parents("#main-content").length > 0;
+        var isInMin = $(this).parents("#min").length > 0;
+        var isInMin2 = $(this).parents("#min2").length > 0;
+
+        if (isInMainContent) {
+          if ($("#min svg").length > 0) {
+            // min is full, use min2
+            $("#main-content svg").appendTo("#min2");
+            $("#min2").prepend(close);
+            makeSelectorActionableJQuery("#min2 .close");
+            $("#min2 .close").on("click", function() {
+              $("#main-content svg").remove();
+              $("#min2 svg").appendTo("#main-content")
+              $("#min2 .close").remove();
+            });
+          } else {
+            $("#main-content svg").appendTo("#min");
+            $("#min").prepend(close);
+            makeSelectorActionableJQuery("#min .close");
+            $("#min .close").on("click", function() {
+              $("#main-content svg").remove();
+							$("#min2 svg").remove();
+							$("#min2 .close").remove();
+              $("#" + $(this).parent().attr("id") + " svg").appendTo("#main-content")
+              $("#min .close").remove();
+            });
+          }
+        } else if(isInMin||isInMin2){
+					$("#main-content svg").remove();
+				}
+        loadSVG(action[e]["path"], $("#main-content"), mapCallBack);
       });
     }
 
   }
 }
 
-function setActionDOM(clazz, action, svg) {
-  console.log("set action " + clazz + " " + action)
-  for (var e in action) {
-    if (action[e]["type"] == "svg") {
 
-      var elems = svg.getElementsByClassName(clazz);
-      for (var i = 0; i < elems.length; i++) {
-        elems[i].addEventListener(e, function(event) {
-          // move
-          var min = document.getElementById("min");
-          min.append(svg.firstChild);
-
-          svg.firstChild.setAttributeNS(null, 'width', '100%');
-          svg.firstChild.setAttributeNS(null, 'height', '100%');
-
-
-
-        }, false);
-      }
-
-
-    }
-
-  }
-}
 
 function loadSVG(file, elem, callback) {
   elem.load(file, function() {
@@ -143,22 +91,6 @@ function loadSVG(file, elem, callback) {
     svg.removeAttr("y");
     svg.attr("height", "100%");
     svg.attr("width", "100%");
-    elem.html(elem.html());
-    //elem.attr("data",file);
     callback();
   });
-}
-
-function loadSVGDOM(file, elementId,elementId) {
-  xhr = new XMLHttpRequest();
-  xhr.open("GET", file, false);
-  xhr.overrideMimeType("image/svg+xml");
-  xhr.onload = function(e) {
-    var loaded = xhr.responseXML.documentElement;
-		loaded.setAttribute("width","100%");
-		loaded.setAttribute("height","100%");
-		loaded.setAttribute("id",elementId);
-    document.getElementById("main-content").appendChild(loaded);
-  }
-  xhr.send("");
 }
