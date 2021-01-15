@@ -1,61 +1,89 @@
+var close = `<div class="close"><i class="fas fa-window-minimize"></i></div>`;
 window.addEventListener("load", function() {
-  //loadSVG("img/mappa2.svg", $("#svg-object"), mapCallBack);
-  var svg = $("#svg-object").getSVG();
-  mapCallBack(svg);
-  //loadSVG("img/mappa.svg", $("#svg-object"), "0 0 1280 680", mapCallBack);
-  //loadSVG("img/mappa.svg", $("#svg-min"), "0 0 1280 680");
-  //loadSVG("img/mappa.svg", $("#svg-logo"), "0 0 1280 680");
+  loadSVG("img/mappa2.svg", $("#main-content"), mapCallBack);
 });
 
 var interaction;
 
-function setInteraction(inter,svg){
-	for (var key in inter) {
+function setInteraction(inter) {
+  for (var key in inter) {
     if (inter.hasOwnProperty(key)) {
-      makeClassActionable(key, svg);
-      setAction(key, inter[key], svg);
+      makeSelectorActionableJQuery("." + key);
+      setActionJQuery(key, inter[key]);
     }
   }
 }
 
-function mapCallBack(svg) {
+function mapCallBack() {
   if (interaction == undefined) {
     $.getJSON("interaction.json", function(data) {
       interaction = data;
-			setInteraction(interaction,svg);
+      setInteraction(interaction);
     });
-  }else{
-		setInteraction(interaction,svg);
-	}
-  svg.find("#reduce").attr("visibility", "hidden");
-}
-
-function makeClassActionable(clazz, svg) {
-  svg.find("." + clazz).css("cursor", "pointer");
-  svg.find("." + clazz).on("mouseenter", function() {
-    svg.find("." + clazz).attr("opacity", "0.8");
-  });
-  svg.find("." + clazz).on("mouseleave", function() {
-    svg.find("." + clazz).attr("opacity", "1.0");
-  });
-}
-
-function setAction(clazz, action, svg) {
-  for (var e in action) {
-    if (action[e]["type"] == "svg") {
-      svg.find("."+clazz).on(e, function() {
-        if ($("#svg-min svg").length > 0) {
-          $("#svg-object svg").remove();
-        } else {
-					$("#svg-object").
-          $("#svg-object").appendTo("#min");
-          svg.find("#reduce").attr("visibility", "visible");
-        }
-        //loadSVG(action[e]["path"], $("#svg-object"), mapCallBack);
-      });
-    }
+  } else {
+    setInteraction(interaction);
   }
 }
+
+function makeSelectorActionableJQuery(selector) {
+  $(selector).css("cursor", "pointer");
+  $(selector).on("mouseenter", function() {
+    $(selector).attr("opacity", "0.8");
+  });
+  $(selector).on("mouseleave", function() {
+    $(selector).attr("opacity", "1.0");
+  });
+}
+
+
+
+function setActionJQuery(clazz, action, svg) {
+  for (var e in action) {
+    if (action[e]["type"] == "svg") {
+      $("." + clazz).on(e, function() {
+
+        var isInMainContent = $(this).parents("#main-content").length > 0;
+        var isInMin = $(this).parents("#min").length > 0;
+        var isInMin2 = $(this).parents("#min2").length > 0;
+
+        if (isInMainContent) {
+          if ($("#min svg").length > 0) {
+            // min is full, use min2
+            $("#main-content svg").appendTo("#min2");
+            $("#min2").prepend(close);
+            makeSelectorActionableJQuery("#min2 .close");
+            $("#min2 .close").on("click", function() {
+              $("#main-content svg").remove();
+              $("#min2 svg").appendTo("#main-content")
+              $("#min2 .close").remove();
+            });
+          } else {
+            $("#main-content svg").appendTo("#min");
+            $("#min").prepend(close);
+            makeSelectorActionableJQuery("#min .close");
+            $("#min .close").on("click", function() {
+              $("#main-content svg").remove();
+							$("#min2 svg").remove();
+							$("#min2 .close").remove();
+              $("#" + $(this).parent().attr("id") + " svg").appendTo("#main-content")
+              $("#min .close").remove();
+            });
+          }
+        } else if(isInMin2){
+					$("#main-content svg").remove();
+				} else if(isInMin) {
+					$("#main-content svg").remove();
+					$("#min2 svg").remove();
+					$("#min2 .close").remove();
+				}
+        loadSVG(action[e]["path"], $("#main-content"), mapCallBack);
+      });
+    }
+
+  }
+}
+
+
 
 function loadSVG(file, elem, callback) {
   elem.load(file, function() {
@@ -67,9 +95,6 @@ function loadSVG(file, elem, callback) {
     svg.removeAttr("y");
     svg.attr("height", "100%");
     svg.attr("width", "100%");
-    elem.html(elem.html());
-    //elem.attr("data",file);
     callback();
   });
-
 }
