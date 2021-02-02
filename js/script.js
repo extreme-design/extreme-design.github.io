@@ -1,9 +1,9 @@
-var close = `<div class="close"><i class="fas fa-window-minimize"></i></div>`;
+var close = `<div class="close"><i class="fas fa-times"></i></div>`;
+var interaction;
+
 window.addEventListener("load", function() {
   loadSVG("img/mappa2.svg", $("#main-content"), mapCallBack);
 });
-
-var interaction;
 
 function setInteraction(inter) {
   for (var key in inter) {
@@ -29,9 +29,18 @@ function makeSelectorActionableJQuery(selector) {
   $(selector).css("cursor", "pointer");
   $(selector).on("mouseenter", function() {
     $(selector).attr("opacity", "0.8");
+
+		//console.log(t.translate[0]+" "+t.translate[1]);
+		//console.log(parseFloat(t.translate[0])+parseFloat(t.translate[1]));
+		//console.log("transform", "scale(2) transform("+t.translate[0]+""+t.translate[1]+")");
+    //$(selector).attr("transform", "scale(2) translate("+t.translate[0]+""+t.translate[1]+")");
+		//$(selector).attr("transform", "scale(2) "+$(selector).attr("transform"));
   });
   $(selector).on("mouseleave", function() {
     $(selector).attr("opacity", "1.0");
+    //$(selector).removeAttr("transform");
+		//var t = parseTransform($(selector).attr("transform"));
+		//$(selector).attr("transform", "translate("+t.translate[0]+""+t.translate[1]+")");
   });
 }
 
@@ -63,19 +72,19 @@ function setActionJQuery(clazz, action, svg) {
             makeSelectorActionableJQuery("#min .close");
             $("#min .close").on("click", function() {
               $("#main-content svg").remove();
-							$("#min2 svg").remove();
-							$("#min2 .close").remove();
+              $("#min2 svg").remove();
+              $("#min2 .close").remove();
               $("#" + $(this).parent().attr("id") + " svg").appendTo("#main-content")
               $("#min .close").remove();
             });
           }
-        } else if(isInMin2){
-					$("#main-content svg").remove();
-				} else if(isInMin) {
-					$("#main-content svg").remove();
-					$("#min2 svg").remove();
-					$("#min2 .close").remove();
-				}
+        } else if (isInMin2) {
+          $("#main-content svg").remove();
+        } else if (isInMin) {
+          $("#main-content svg").remove();
+          $("#min2 svg").remove();
+          $("#min2 .close").remove();
+        }
         loadSVG(action[e]["path"], $("#main-content"), mapCallBack);
       });
     }
@@ -97,4 +106,13 @@ function loadSVG(file, elem, callback) {
     svg.attr("width", "100%");
     callback();
   });
+}
+
+function parseTransform(a) {
+  var b = {};
+  for (var i in a = a.match(/(\w+\((\-?\d+\.?\d*e?\-?\d*,?)+\))+/g)) {
+    var c = a[i].match(/[\w\.\-]+/g);
+    b[c.shift()] = c;
+  }
+  return b;
 }
