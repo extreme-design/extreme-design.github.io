@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="841.89px" height="595.28px" viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve">
+<g id="grafo_1">
+	<path fill="#EF7928" stroke="#EE7828" stroke-miterlimit="10" d="M185.895,148.343c0,2.86-1.591,5.178-3.553,5.178H65.893
+		c-1.962,0-3.553-2.318-3.553-5.178v-95.97c0-2.86,1.591-5.178,3.553-5.178h116.449c1.962,0,3.553,2.318,3.553,5.178V148.343z"/>
+	<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M183.608,151.484c0,2.86-1.591,5.178-3.553,5.178
+		H63.606c-1.962,0-3.553-2.318-3.553-5.178v-95.97c0-2.86,1.591-5.178,3.553-5.178h116.449c1.962,0,3.553,2.318,3.553,5.178V151.484
+		z"/>
+	<g>
+		<ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" cx="91.162" cy="86.081" rx="13.436" ry="12.287"/>
+		<ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" cx="152.584" cy="101.879" rx="11.517" ry="10.532"/>
+		<ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" cx="116.595" cy="119.528" rx="11.997" ry="10.971"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="96.821" y1="86.081" x2="150.24" y2="101.879"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="150.24" y1="101.879" x2="116.595" y2="121.431"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="116.595" y1="121.431" x2="96.821" y2="91.347"/>
+	</g>
+</g>
+<ellipse id="cerchio_1" fill="none" stroke="#B2116C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="420.992" cy="111.683" rx="96.2" ry="58.214"/>
+<text id="Submit_ontology_module_to_domain_expert" transform="matrix(1 0 0 1 351.7622 97.6126)"><tspan x="0" y="0" fill="#B2116C" font-family="'BebasNeue'" font-size="24.1086">Submit ontology</tspan><tspan x="-4.399" y="28.93" fill="#B2116C" font-family="'BebasNeue'" font-size="24.1086">module to domain</tspan><tspan x="38.754" y="57.861" fill="#B2116C" font-family="'BebasNeue'" font-size="24.1086">expert</tspan></text>
+<ellipse id="cerchio_2" fill="none" stroke="#B2116C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="716.935" cy="363.332" rx="96.2" ry="58.214"/>
+<text id="successful_test" transform="matrix(1 0 0 1 669.1013 358.2609)"><tspan x="0" y="0" fill="#B2116C" font-family="'BebasNeue'" font-size="24.1086">successful</tspan><tspan x="27.568" y="28.93" fill="#B2116C" font-family="'BebasNeue'" font-size="24.1086">test</tspan></text>
+<g id="freccia_1">
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="213.697" y1="106.389" x2="279.16" y2="106.389"/>
+		<g>
+			<polygon points="276.826,114.367 290.641,106.39 276.826,98.412 			"/>
+		</g>
+	</g>
+</g>
+<g id="freccia_2">
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="550.088" y1="106.389" x2="615.551" y2="106.389"/>
+		<g>
+			<polygon points="613.217,114.367 627.032,106.39 613.217,98.412 			"/>
+		</g>
+	</g>
+</g>
+<g id="grafico">
+	<path fill="#283273" d="M781,154.972c0,2.86-1.591,5.178-3.553,5.178H660.997c-1.962,0-3.553-2.318-3.553-5.178v-95.97
+		c0-2.86,1.591-5.178,3.553-5.178h116.449c1.962,0,3.553,2.318,3.553,5.178V154.972z"/>
+	<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M778.713,158.113c0,2.86-1.591,5.178-3.553,5.178
+		H658.71c-1.962,0-3.553-2.318-3.553-5.178v-95.97c0-2.86,1.591-5.178,3.553-5.178h116.449c1.962,0,3.553,2.318,3.553,5.178V158.113
+		z"/>
+	<g>
+		<g>
+			
+				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="683.211" y1="82.19" x2="683.211" y2="143.447"/>
+			<g>
+				<polygon fill="#FFFFFF" points="679.471,83.284 683.211,76.808 686.95,83.284 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			
+				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="680.854" y1="143.447" x2="748.494" y2="143.447"/>
+			<g>
+				<polygon fill="#FFFFFF" points="747.4,147.187 753.876,143.448 747.4,139.708 				"/>
+			</g>
+		</g>
+	</g>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" points="683.211,140.945 
+		696.266,116.252 712.275,120.594 736.967,101.057 742.937,102.957 756.233,85.591 	"/>
+</g>
+<g id="freccia_3">
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="716.935" y1="202.398" x2="716.935" y2="267.862"/>
+		<g>
+			<polygon points="708.956,265.527 716.934,279.343 724.912,265.527 			"/>
+		</g>
+	</g>
+</g>
+<g id="cerchio_4">
+	
+		<ellipse fill="#B2116C" stroke="#B2116C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="418.862" cy="463.321" rx="83.071" ry="65.45"/>
+	
+		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="423.897" cy="468.355" rx="83.071" ry="65.45"/>
+</g>
+<g id="Refactor_and_integrate">
+	<text transform="matrix(1 0 0 1 384.4823 458.2793)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">Refactor</tspan><tspan x="-19.287" y="28.93" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">and integrate</tspan></text>
+</g>
+<g id="cerchio_3">
+	
+		<ellipse fill="#B2116C" stroke="#B2116C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="418.862" cy="283.006" rx="83.071" ry="65.45"/>
+	
+		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="423.897" cy="288.041" rx="83.071" ry="65.45"/>
+</g>
+<g id="Publish_stable_release">
+	<text transform="matrix(1 0 0 1 391.1122 277.9647)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">Publish</tspan><tspan x="-30.376" y="28.93" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">stable release</tspan></text>
+</g>
+<g id="freccia_5">
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="607.178" y1="406.505" x2="546.924" y2="432.097"/>
+		<g>
+			<polygon points="545.954,423.841 536.356,436.584 552.191,438.527 			"/>
+		</g>
+	</g>
+</g>
+<g id="freccia_4">
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="607.178" y1="353.491" x2="546.924" y2="327.899"/>
+		<g>
+			<polygon points="552.192,321.469 536.357,323.41 545.954,336.155 			"/>
+		</g>
+	</g>
+</g>
+<g id="No">
+	<path fill="#E30F19" stroke="#E30F19" stroke-miterlimit="10" d="M602.961,457.072c0,0.667-0.371,1.207-0.828,1.207h-27.145
+		c-0.457,0-0.828-0.54-0.828-1.207v-22.371c0-0.667,0.371-1.207,0.828-1.207h27.145c0.457,0,0.828,0.54,0.828,1.207V457.072z"/>
+	<g>
+		<text transform="matrix(1 0 0 1 580.4867 453.3487)" font-family="'BebasNeue'" font-size="20.6503">NO</text>
+	</g>
+</g>
+<g id="Yes">
+	<path fill="#44AC35" stroke="#41AB34" stroke-miterlimit="10" d="M602.961,328.3c0,0.667-0.371,1.207-0.828,1.207h-27.145
+		c-0.457,0-0.828-0.54-0.828-1.207v-22.371c0-0.667,0.371-1.207,0.828-1.207h27.145c0.457,0,0.828,0.54,0.828,1.207V328.3z"/>
+	<g>
+		<text transform="matrix(1 0 0 1 577.2343 324.5768)" font-family="'BebasNeue'" font-size="20.6503">YES</text>
+	</g>
+</g>
+</svg>
