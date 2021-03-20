@@ -1,23 +1,102 @@
 {
-  "RequirementFormalization": {
+  "FormalizeRequirements": {
     "click": {
       "type": "svg",
-      "path": "img/schema2.svg",
-			"viewBox": "0 0 1602.76 855.227"
+      "path": "img/schema2.svg"
     }
   },
-	"AlphaTesting": {
-		"click": {
-			"type": "svg",
-			"path": "img/alphatesting.svg",
-			"viewBox": "0 0 1602.76 855.227"
-		}
-	},
-	"Gather": {
-		"click": {
-			"type": "svg",
-			"path": "img/schema2.svg",
-			"viewBox": "0 0 1602.76 855.227"
-		}
-	}
+  "CollectRequirements": {
+    "click": {
+      "type": "text",
+      "title": "Collect Requirements",
+      "body": "The customer team, made up by domain experts, provides the requirements that will guide the design and testing process  in the form of user stories, using <a href=\"https://www.google.it/intl/it/forms/about/\">Google forms</a> or <a href=\"https://guides.github.com/features/issues/\">Github issues</a>."
+    }
+  },
+  "UserStories": {
+    "click": {
+      "type": "text",
+      "title": "User stories",
+      "body": "A user story is a set of sentences which describe by example the kind of facts that the knowledge graph is required to encode. The customer team is instructed to break the possible complex stories into smaller and simpler ones.<br/>The length of a user story is limited to favour keeping them focused; its maximum length is decided by the design team.<br/>User stories may be described by<ul><li>priority level</li><li>title (to express possible dependencies of a story to others)</li><li>identifier (to express possible dependencies of a story to others)</li></ul>"
+    }
+  },
+  "DefineTestCase": {
+    "click": {
+      "type": "svg",
+      "path": "img/defineTestCases.svg"
+    }
+  },
+  "DevelopModules": {
+    "click": {
+      "type": "svg",
+      "path": "img/developModule.svg"
+    }
+  },
+  "RunAlphaTesting": {
+    "click": {
+      "type": "svg",
+      "path": "img/runAlphaTesting.svg"
+    }
+  },
+  "RunBetaTesting": {
+    "click": {
+      "type": "svg",
+      "path": "img/runBetaTesting.svg"
+    }
+  },
+  "PublishStableRelease": {
+    "click": {
+      "type": "svg",
+      "path": "img/publishStableRelease.svg"
+    }
+  },
+  "CreateSmallerStories": {
+    "click": {
+      "type": "text",
+      "title": "Create Smaller Stories",
+      "body": "The customer team breaks possible complex stories into smaller and simpler ones."
+    }
+  },
+  "EstablishGeneralConstraints": {
+    "click": {
+      "type": "text",
+      "title": "Establish General Constraints and Competency Questions",
+      "body": "The design team, in collaboration with the customer team derives general constraints and one or more competency questions from the generalization of user stories."
+    }
+  },
+  "CompetencyQuestions": {
+    "click": {
+      "type": "text",
+      "title": "Competency Questions",
+      "body": "Competency questions (CQ) are the natural language counterpart of structured queries that we want to enable against the knowledge graph.<br/> The design team, in collaboration with the costumer team, identify the main concepts and the possible general constraints from the user stories to create CQs."
+    }
+  },
+  "FormulateTestProcedures": {
+    "click": {
+      "type": "text",
+      "title": "Formulate Test Procedure",
+      "body": "Determine how to test that particular requirement.<br/>There are three types of testing procedure:<ul><li><b>Competency Question Verification.</b> this testing procedure allows to verify if the ontology is able to answer to te competency questions that have been collected during the requirement collection.</li><li><b>Error Provocation.</b> Another important characteristic of an ontology is to allow as few erroneous facts or inferences as possible. This category of testing is comparable to software testing when a system is fed random or incorrect data, or data considered as \"boundary values\" of the input, e.g. the extremes of value ranges, in order to check robustness.</li><li><b>Inference Verification.</b>This testing procedure allows to verify that the inference mechanisms are in place, to ensure the correct fulfillment of the inference requirement.</li></ul>"
+    }
+  },
+	"DefineTestCaseDescription": {
+    "click": {
+      "type": "text",
+      "title": "Define Test Case",
+      "body": "Create a test case as defined by a testing framework (e.g. <a href=\"https://github.com/TESTaLOD/TESTaLOD\">TESTaLOD</a>, <a href=\"https://w3id.org/OWLunit\">OWL unit</a>)"
+    }
+  },
+	"AddTestData": {
+    "click": {
+      "type": "text",
+      "title": "Add Test Data",
+      "body": "Add the test data, needed to perform the procedure according to the type of test you choose, creating a Toy Data. The data will use ephemeral prefixes that will be bound to the permanent URI of the ontology in the Run test phase"
+    }
+  },
+	"DetermineExpectedResults": {
+    "click": {
+      "type": "text",
+      "title": "Determine expected results",
+      "body": "Depending on the test data, determine what output would be correct. For example, specify the data with testAnnotationSchema:hasExpectedResult property."
+    }
+  }
+
 }

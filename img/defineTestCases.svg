@@ -38,17 +38,17 @@
 </g>
 <g id="freccia_1">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="193.026" y1="149.68" x2="258.49" y2="149.68"/>
 		<g>
 			<polygon points="256.155,157.658 269.971,149.681 256.155,141.703 			"/>
 		</g>
 	</g>
 </g>
-<g id="cerchio_1">
-	
+<g id="formulate_test_procedures_cerchio_1">
+
 		<ellipse fill="#FAB537" stroke="#FAB538" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="383.423" cy="150.626" rx="81.853" ry="64.49"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="386.561" cy="152.197" rx="83.071" ry="65.45"/>
 </g>
 <g id="Formulate_test_procedures">
@@ -56,7 +56,7 @@
 </g>
 <g id="freccia_2">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="504.438" y1="149.68" x2="569.901" y2="149.68"/>
 		<g>
 			<polygon points="567.567,157.658 581.382,149.681 567.567,141.703 			"/>
@@ -65,7 +65,7 @@
 </g>
 <g id="freccia_4">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="581.382" y1="459.207" x2="515.919" y2="459.207"/>
 		<g>
 			<polygon points="518.253,451.229 504.438,459.206 518.253,467.184 			"/>
@@ -74,7 +74,7 @@
 </g>
 <g id="freccia_5">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="269.971" y1="459.207" x2="204.507" y2="459.207"/>
 		<g>
 			<polygon points="206.842,451.229 193.026,459.206 206.842,467.184 			"/>
@@ -83,35 +83,35 @@
 </g>
 <g id="freccia_3">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="702.938" y1="240.247" x2="702.938" y2="305.711"/>
 		<g>
 			<polygon points="694.96,303.376 702.937,317.192 710.915,303.376 			"/>
 		</g>
 	</g>
 </g>
-<g id="cherchio_2">
-	
+<g id="define_test_cases_cherchio_2">
+
 		<ellipse fill="#FAB537" stroke="#FAB538" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="694.266" cy="152.626" rx="81.853" ry="64.49"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="697.972" cy="152.197" rx="83.071" ry="65.45"/>
 </g>
 <g id="Define_test_cases">
 	<text transform="matrix(1 0 0 1 670.0811 143.1211)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">Define</tspan><tspan x="-17.032" y="28.93" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">test cases</tspan></text>
 </g>
-<g id="cerchio_3">
-	
+<g id="add_test_data_cerchio_3">
+
 		<ellipse fill="#FAB537" stroke="#FAB538" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="701.639" cy="461.132" rx="81.853" ry="64.49"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="705.455" cy="459.207" rx="83.071" ry="65.45"/>
 </g>
 <g id="Add_test_data">
 	<text transform="matrix(1 0 0 1 688.1956 450.1305)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">Add</tspan><tspan x="-23.674" y="28.93" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">test data</tspan></text>
 </g>
-<g id="cerchio_4">
-	
+<g id="determine_expected_results_cerchio_4">
+
 		<ellipse fill="#FAB537" stroke="#FAB538" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="390.383" cy="460.132" rx="81.853" ry="64.49"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="391.595" cy="459.207" rx="83.071" ry="65.45"/>
 </g>
 <g id="Determine_expected_results">
@@ -167,7 +167,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M428.358,35.693v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84V37.151h22.535v11.13
 			c0.418,0,0.852,0,1.288,0V35.693H428.358z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="445.198" y1="48.593" x2="455.893" y2="59.287"/>
 	</g>
 </g>
@@ -215,7 +215,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M752.386,35.693v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84V37.151h22.535v11.13
 			c0.418,0,0.852,0,1.288,0V35.693H752.386z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="769.226" y1="48.593" x2="779.92" y2="59.287"/>
 	</g>
 </g>
@@ -263,7 +263,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M752.386,342.696v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84v-19.522h22.535v11.13
 			c0.418,0,0.852,0,1.288,0v-12.588H752.386z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="769.226" y1="355.596" x2="779.92" y2="366.29"/>
 	</g>
 </g>
@@ -311,7 +311,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M434.588,342.696v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84v-19.522h22.535v11.13
 			c0.418,0,0.852,0,1.288,0v-12.588H434.588z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="451.428" y1="355.596" x2="462.122" y2="366.29"/>
 	</g>
 </g>
