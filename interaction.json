@@ -9,14 +9,14 @@
     "click": {
       "type": "text",
       "title": "Collect Requirements",
-      "body": "The customer team, made up by domain experts, provides the requirements that will guide the design and testing process  in the form of user stories, using <a href=\"https://www.google.it/intl/it/forms/about/\">Google forms</a> or <a href=\"https://guides.github.com/features/issues/\">Github issues</a>."
+      "body": "The <a href=\"Customer\">customer team</a>, made up by domain experts, provides the requirements that will guide the design and testing process  in the form of <a href=\"UserStories\">user stories</a>, using <a href=\"https://www.google.it/intl/it/forms/about/\">Google forms</a> or <a href=\"https://guides.github.com/features/issues/\">Github issues</a>."
     }
   },
   "UserStories": {
     "click": {
       "type": "text",
       "title": "User stories",
-      "body": "A user story is a set of sentences which describe by example the kind of facts that the knowledge graph is required to encode. The customer team is instructed to break the possible complex stories into smaller and simpler ones.<br/>The length of a user story is limited to favour keeping them focused; its maximum length is decided by the design team.<br/>User stories may be described by<ul><li>priority level</li><li>title (to express possible dependencies of a story to others)</li><li>identifier (to express possible dependencies of a story to others)</li></ul>"
+      "body": "A user story is a set of sentences which describe by example the kind of facts that the knowledge graph is required to encode. The <a href=\"Customer\">customer team</a> is instructed to break the possible complex stories into smaller and simpler ones.<br/>The length of a user story is limited to favour keeping them focused; its maximum length is decided by the design team.<br/>User stories may be described by<ul><li>priority level</li><li>title (to express possible dependencies of a story to others)</li><li>identifier (to express possible dependencies of a story to others)</li></ul>"
     }
   },
   "DefineTestCase": {
@@ -158,7 +158,9 @@
     "click": {
       "type": "text",
       "title": "Refactor and integrate",
-      "body": "TODO"
+      "body": "TODO",
+			"background":"red",
+			"color":"white"
     }
   },
 	"SubstituteEphemeralPrefixes": {
@@ -174,6 +176,61 @@
       "title": "Sumbmit the ontology to a domain expert",
       "body": "TODO"
     }
-  }
-
+  },
+	"Customer": {
+    "click": {
+      "type": "text",
+      "title": "Customer",
+      "body": "In the <a href=\"XDMethodology\">XD methodology</a>, the customer team is composed by domain experts eliciting the requirements that guide the design and testing process. Requirements are collected in the form of <a href=\"UserStories\">user stories</a>. The customer team is instructed <a href=\"CreateSmallerStories\">to break possible complex stories into smaller and simpler ones</a>."
+    }
+  },
+	"XDMethodology": {
+		"click": {
+      "type": "text",
+      "title": "XD Methodology",
+      "body": "XD is an ontology design methodology that puts the reuse of <a href=\"ODPs\">Ontology Design Patterns (ODPs)</a> at its core both as a principle and as an explicit activity.<br/>The intensive use of<ul><li><a href=\"ODPs\">ODPs</a></li><li><a href=\"ModularDesign\">Modular Design</a></li><li><a href=\"TDD\">Test-driven approach</a></li></ul>are the main characterising principles of the method."
+    }
+	},
+	"ODPs" : {
+		"click": {
+      "type": "text",
+      "title": "Ontology Design Patterns",
+      "body": "Ontology Design Patterns (ODPs) provide solutions to recurrent modelling issues. ODPs are small ontologies that mediate between use cases (problem types) and design solutions. They are used as modelling components: ideally, an ontology results from a composition of ODPs, with appropriate dependencies between them, plus the necessary design expansion based on specific needs.<br/>If you are not familiar with ODPs, they can be found on catalogues, such as:<ul><li><a href=\"http://www.gong.manchester.ac.uk/odp/html/\">the catalogue maintained by the University of Manchester</a></li><li><a href=\"http://ontologydesignpatterns.org/wiki/Main_Page\">The Ontology Design Pattern Portal<a></li><li><a href=\"http://ontologydesignpatterns.org/wiki/WOP:Main\">The Workshop on Ontology Design and Patterns series</a></li></ul>"
+    }
+	},
+	"ModularDesign" : {
+		"click": {
+      "type": "text",
+      "title": "Modular design",
+      "body": "Separating the representation of requirements into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired requirement."
+    }
+	},
+	"TDD": {
+		"click": {
+      "type": "text",
+      "title": "Ontology Design Patterns",
+      "body": "Ontology Design Patterns (ODPs) provide solutions to recurrent modelling issues. ODPs are small ontologies that mediate between use cases (problem types) and design solutions. They are used as modelling components: ideally, an ontology results from a composition of ODPs, with appropriate dependencies between them, plus the necessary design expansion based on specific needs.<br/>If you are not familiar with ODPs, they can be found on catalogues, such as:<ul><li><a href=\"http://www.gong.manchester.ac.uk/odp/html/\">the catalogue maintained by the University of Manchester</a></li><li><a href=\"http://ontologydesignpatterns.org/wiki/Main_Page\">The Ontology Design Pattern Portal<a></li><li><a href=\"http://ontologydesignpatterns.org/wiki/WOP:Main\">The Workshop on Ontology Design and Patterns series</a></li></ul>"
+    }
+	},
+	"Designer": {
+		"click": {
+      "type": "text",
+      "title": "Designer",
+      "body": "In the <a href=\"XDMethodology\">XD methodology</a>, the design team is in charge of the design process by identifying and implementing the <a href=\"ODPs\">Ontology Design Patterns (ODPs)</a> that best address the given requirements. In collaboration with the <a href=\"Customer\">customer team</a>, the design team generalises the <a href=\"UserStories\">user stories</a> identifying the main concepts for eliciting the <a href=\"CompetencyQuestions\">CQs</a>."
+    }
+	},
+	"Tester": {
+		"click": {
+      "type": "text",
+      "title": "Tester",
+      "body": "In the <a href=\"XDMethodology\">XD methodology</a>, the testing team performs testing and validation of the produced ontology components, working in parallel and interactively with the <a href=\"Designer\">design team</a>: the same requirements are used as input by the design team, for producing the ontology, and by the testing team, for translating them into unit tests."
+    }
+	},
+	"IntegrationTeam" :{
+		"click": {
+      "type": "text",
+      "title": "Integration Team",
+      "body": "The integration team takes care of integrating the different components."
+    }
+	}
 }

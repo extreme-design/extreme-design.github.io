@@ -1,11 +1,14 @@
-var close = `<div class="close"><i class="fas fa-times"></i></div>`;
+//var close = `<div class="close"><i class="fas fa-times"></i></div>`;
+var close = `<div class="close"><i class="fas fa-expand"></i></div>`;
+
 var interaction;
 var text;
 var classes;
 
-
 debug = console.log
 //debug = function() {}
+
+var h = ['main'];
 
 $(document).ready(function() {
   $.extend($.expr[':'], {
@@ -75,38 +78,91 @@ function makeSelectorActionableJQuery(selector) {
 function setActionJQuery(clazz, action, svg) {
   for (var e in action) {
     if (action[e]["type"] == "svg") {
-			//debug(`Add ${e} on ${clazz} ${  $("." + clazz+":not([clickable])").length}`);
-      $("." + clazz+":not([clickable])").on(e, function(ev) {
-				ev.stopPropagation();
+      //debug(`Add ${e} on ${clazz} ${  $("." + clazz+":not([clickable])").length}`);
+      $("." + clazz + ":not([clickable])").on(e, function(ev) {
+        ev.stopPropagation();
         click($(this))
         loadSVG(action[e]["path"], "#main-content", mapCallBack);
       });
-			$("." + clazz).attr("clickable","true")
+      $("." + clazz).attr("clickable", "true")
 
     } else if (action[e]["type"] == "text") {
-      $("." + clazz+":not([clickable])").on(e, function(ev) {
-				ev.stopPropagation();
+      $("." + clazz + ":not([clickable])").on(e, function(ev) {
+        ev.stopPropagation();
         click($(this));
-        var toappend = getText(action[e]["title"], action[e]["body"])
+        var toappend = getText(action[e]["title"], action[e]["body"], action[e]["background"], action[e]["color"], null, clazz);
         $("#main-content .row").remove();
-        $("#main-content").append(toappend)
+        $("#main-content").append(toappend);
+				addActionOnA();
       });
     }
 
   }
 }
 
-function getText(title, body) {
-  var result = `<div class="row text-content" style="height:25%">
+function addActionOnA(){
+	$('a').click(function(e2) {
+		debug("Click " + $(this).attr("href"));
+		if ($(this).attr("href") in interaction) {
+			e2.preventDefault();
+			var ref = $(this).attr("href");
+			debug($(this).parent().attr("key"))
+			debug(interaction[ref])
+			debug(interaction[ref]["click"]["title"])
+
+			if($(this).attr("back")){
+				h.pop();
+			}
+
+			if($(this).parent().attr("key")!=undefined){
+				h.push($(this).parent().attr("key"));
+			}
+
+			var toappend2 = getText(interaction[ref]["click"]["title"], interaction[ref]["click"]["body"], interaction[ref]["click"]["background"], interaction[ref]["click"]["color"], $(this).parent().attr("key"), ref);
+			$("#main-content .row").remove();
+			$("#main-content").append(toappend2)
+			addActionOnA();
+		}
+	});
+}
+
+function getText(title, body, background, color, back, key) {
+
+  debug("Color " + color)
+
+  if (background == null) {
+    background = "#99ccff";
+  }
+
+  if (color == null) {
+    color = "black"
+  }
+
+  debug("Color " + color)
+	debug(h)
+
+  var result = `
+    <div class="row text-content" style="height:100%;">
         <div class="col">
-            <h1>${title}</h1>
+						<div id="text-content-shape" style="background: ${background};">
+							<div id="text-content-frame">
+								<div id="text-content-text">
+									<div>`;
+
+  if (h[h.length-1] != "main") {
+    result += `<a href="${h[h.length-1]}" style="text-decoration: none;" back="true"><i class="fas fa-arrow-left"></i> Back</a>`;
+  }
+
+  result += `
+
+										<h1 style="color: ${color}; font-family: 'Bebas Neue'; font-size: 48px;">${title}</h1>
+										<p style="color: ${color};" key="${key}">${body}</p>
+									</div>
+								</div>
+							</div>
+						</div>
         </div>
-    </div>
-    <div class="row text-content" style="height:75%">
-        <div class="col">
-            <p>${body}</p>
-        </div>
-    </div>`
+    </div>`;
   return result
 }
 
@@ -139,7 +195,7 @@ function click(elem) {
         $("#main-content .row").remove();
         $("#min2 svg").appendTo("#main-content")
         $("#min2 .close").remove();
-				$("#min3 svg").remove();
+        $("#min3 svg").remove();
         $("#min3 .close").remove();
       });
     } else if ($("#min svg").length > 0 && $("#min2 svg").length > 0) {
@@ -163,7 +219,7 @@ function click(elem) {
         $("#main-content .row").remove();
         $("#min2 svg").remove();
         $("#min2 .close").remove();
-				$("#min3 svg").remove();
+        $("#min3 svg").remove();
         $("#min3 .close").remove();
         $("#min svg").appendTo("#main-content")
         $("#min .close").remove();
@@ -179,8 +235,8 @@ function click(elem) {
 }
 
 function loadSVG(file, selector, callback) {
-	debug("load svg "+file)
-	elem = $(selector)
+  debug("load svg " + file)
+  elem = $(selector)
   elem.load(file, function() {
     var svg = elem.find("svg");
     svg.removeAttr("enable-background");
@@ -190,7 +246,7 @@ function loadSVG(file, selector, callback) {
     svg.removeAttr("y");
     svg.attr("height", "100%");
     svg.attr("width", "100%");
-		svg.attr("filename",file)
+    svg.attr("filename", file)
     $(':BebasNeue').css("font-family", "Bebas Neue");
     svg.append("<defs><style type=\"text/css\">@import url('http://fonts.googleapis.com/css?family=Bebas+Neue');</style></defs>");
     callback();
