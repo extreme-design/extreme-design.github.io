@@ -153,6 +153,13 @@
       "title": "Publish the Ontology",
       "body": "Publish the ontology on GitHub or on your own web server.<br/>To publish the ontology on GitHub: <ul><li>Create a repository for the ontology</li><li>Commit and push</li><li>Create a version tag</li><li>Publsh release</li></ul><br/>To publish the ontology on your own server:<ul><li>Create directory for the release</li><li>Upload the ontology</li></ul>"
     }
+  },
+	"RefactorAndIntegrate": {
+    "click": {
+      "type": "text",
+      "title": "Refactor and integrate",
+      "body": "TODO"
+    }
   }
 
 }

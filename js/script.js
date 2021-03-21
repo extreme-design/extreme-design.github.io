@@ -3,8 +3,9 @@ var interaction;
 var text;
 var classes;
 
-//console.log = function() {}
 
+debug = console.log
+//debug = function() {}
 
 $(document).ready(function() {
   $.extend($.expr[':'], {
@@ -16,13 +17,13 @@ $(document).ready(function() {
 });
 
 window.addEventListener("load", function() {
-  loadSVG("img/schema1.svg", $("#main-content"), mapCallBack);
+  loadSVG("img/schema1.svg", "#main-content", mapCallBack);
 });
 
 function setInteraction(inter) {
-  console.log("Set interaction")
+  //console.log("Set interaction")
   for (var key in inter) {
-    console.log("key " + key)
+    //console.log("key " + key)
     if (inter.hasOwnProperty(key)) {
       makeSelectorActionableJQuery("." + key);
       setActionJQuery(key, inter[key]);
@@ -47,11 +48,11 @@ function mapCallBack() {
 }
 
 function addClasses() {
-  console.log("add classes")
+  //console.log("add classes")
   for (var k in classes) {
     var elm = $("#" + k);
     if (elm.length == 0) {
-      console.log("Und key " + k);
+      //console.log("Und key " + k);
     } else {
       elm.addClass(classes[k]);
       elm.children().addClass(classes[k]);
@@ -60,7 +61,7 @@ function addClasses() {
 }
 
 function makeSelectorActionableJQuery(selector) {
-  console.log("make actionable " + selector)
+  //console.log("make actionable " + selector)
   //console.log($(selector).length)
   $(selector).css("cursor", "pointer");
   $(selector).on("mouseenter", function() {
@@ -74,12 +75,17 @@ function makeSelectorActionableJQuery(selector) {
 function setActionJQuery(clazz, action, svg) {
   for (var e in action) {
     if (action[e]["type"] == "svg") {
-      $("." + clazz).on(e, function() {
+			//debug(`Add ${e} on ${clazz} ${  $("." + clazz+":not([clickable])").length}`);
+      $("." + clazz+":not([clickable])").on(e, function(ev) {
+				ev.stopPropagation();
         click($(this))
-        loadSVG(action[e]["path"], $("#main-content"), mapCallBack);
+        loadSVG(action[e]["path"], "#main-content", mapCallBack);
       });
+			$("." + clazz).attr("clickable","true")
+
     } else if (action[e]["type"] == "text") {
-      $("." + clazz).on(e, function() {
+      $("." + clazz+":not([clickable])").on(e, function(ev) {
+				ev.stopPropagation();
         click($(this));
         var toappend = getText(action[e]["title"], action[e]["body"])
         $("#main-content .row").remove();
@@ -172,9 +178,11 @@ function click(elem) {
   }
 }
 
+var images = {};
 
-
-function loadSVG(file, elem, callback) {
+function loadSVG(file, selector, callback) {
+	debug("load svg "+file)
+	elem = $(selector)
   elem.load(file, function() {
     var svg = elem.find("svg");
     svg.removeAttr("enable-background");
@@ -184,10 +192,12 @@ function loadSVG(file, elem, callback) {
     svg.removeAttr("y");
     svg.attr("height", "100%");
     svg.attr("width", "100%");
+		svg.attr("filename",file)
     $(':BebasNeue').css("font-family", "Bebas Neue");
     svg.append("<defs><style type=\"text/css\">@import url('http://fonts.googleapis.com/css?family=Bebas+Neue');</style></defs>");
     callback();
   });
+
 }
 
 function parseTransform(a) {
