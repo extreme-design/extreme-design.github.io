@@ -6,13 +6,13 @@ var classes;
 //console.log = function() {}
 
 
-$(document).ready(function(){
-   $.extend($.expr[':'], {
-     BebasNeue: function(elem){
-        var $e = $(elem);
-        return( typeof $e.css('font-family') !== 'undefined' && $e.css('font-family') === 'BebasNeue' );
-     },
- });
+$(document).ready(function() {
+  $.extend($.expr[':'], {
+    BebasNeue: function(elem) {
+      var $e = $(elem);
+      return (typeof $e.css('font-family') !== 'undefined' && $e.css('font-family') === 'BebasNeue');
+    },
+  });
 });
 
 window.addEventListener("load", function() {
@@ -20,9 +20,9 @@ window.addEventListener("load", function() {
 });
 
 function setInteraction(inter) {
-	console.log("Set interaction")
+  console.log("Set interaction")
   for (var key in inter) {
-		console.log("key "+key)
+    console.log("key " + key)
     if (inter.hasOwnProperty(key)) {
       makeSelectorActionableJQuery("." + key);
       setActionJQuery(key, inter[key]);
@@ -33,7 +33,7 @@ function setInteraction(inter) {
 function mapCallBack() {
   if (interaction == undefined) {
     $.getJSON("classes.json", function(data) {
-			classes=data;
+      classes = data;
       addClasses();
       $.getJSON("interaction.json", function(data2) {
         interaction = data2;
@@ -41,27 +41,27 @@ function mapCallBack() {
       });
     });
   } else {
-		addClasses();
+    addClasses();
     setInteraction(interaction);
   }
 }
 
-function addClasses(){
-	console.log("add classes")
-	for (var k in classes) {
-		var elm = $("#" + k);
-		if (elm.length == 0) {
-			console.log("Und key " + k);
-		} else {
-			elm.addClass(classes[k]);
-			elm.children().addClass(classes[k]);
-		}
-	}
+function addClasses() {
+  console.log("add classes")
+  for (var k in classes) {
+    var elm = $("#" + k);
+    if (elm.length == 0) {
+      console.log("Und key " + k);
+    } else {
+      elm.addClass(classes[k]);
+      elm.children().addClass(classes[k]);
+    }
+  }
 }
 
 function makeSelectorActionableJQuery(selector) {
-	console.log("make actionable "+selector)
-	//console.log($(selector).length)
+  console.log("make actionable " + selector)
+  //console.log($(selector).length)
   $(selector).css("cursor", "pointer");
   $(selector).on("mouseenter", function() {
     $(selector).attr("opacity", "0.8");
@@ -79,19 +79,19 @@ function setActionJQuery(clazz, action, svg) {
         loadSVG(action[e]["path"], $("#main-content"), mapCallBack);
       });
     } else if (action[e]["type"] == "text") {
-				$("." + clazz).on(e, function() {
-					click($(this));
-					var toappend = getText(action[e]["title"], action[e]["body"])
-					$("#main-content .row").remove();
-					$("#main-content").append(toappend)
-				});
-		}
+      $("." + clazz).on(e, function() {
+        click($(this));
+        var toappend = getText(action[e]["title"], action[e]["body"])
+        $("#main-content .row").remove();
+        $("#main-content").append(toappend)
+      });
+    }
 
   }
 }
 
-function getText(title, body){
-	var result =`<div class="row text-content" style="height:25%">
+function getText(title, body) {
+  var result = `<div class="row text-content" style="height:25%">
         <div class="col">
             <h1>${title}</h1>
         </div>
@@ -101,56 +101,75 @@ function getText(title, body){
             <p>${body}</p>
         </div>
     </div>`
-		return result
+  return result
 }
 
-function click(elem){
+function click(elem) {
 
-	// true if the click is in #main-content
-	var isInMainContent = elem.parents("#main-content").length > 0;
+  // true if the click is in #main-content
+  var isInMainContent = elem.parents("#main-content").length > 0;
 
-	// true if the click is in #min
-	var isInMin = elem.parents("#min").length > 0;
+  // true if the click is in #min
+  var isInMin = elem.parents("#min").length > 0;
 
-	// true if the click is in #min2
-	var isInMin2 = elem.parents("#min2").length > 0;
+  // true if the click is in #min2
+  var isInMin2 = elem.parents("#min2").length > 0;
 
-	// true if the click is within an svg
-	var isSvg = elem.parents("svg").length > 0
+  // true if the click is in #min2
+  var isInMin2 = elem.parents("#min3").length > 0;
+
+  // true if the click is within an svg
+  var isSvg = elem.parents("svg").length > 0
 
 
-	if (isInMainContent) {
-		if ($("#min svg").length > 0) {
-			// min is full, append the content in min2
-			$("#main-content svg").appendTo("#min2");
-			$("#min2").prepend(close);
-			makeSelectorActionableJQuery("#min2 .close");
-			$("#min2 .close").on("click", function() {
-				$("#main-content svg").remove();
-				$("#main-content .row").remove();
-				$("#min2 svg").appendTo("#main-content")
-				$("#min2 .close").remove();
-			});
-		} else {
-			$("#main-content svg").appendTo("#min");
-			$("#min").prepend(close);
-			makeSelectorActionableJQuery("#min .close");
-			$("#min .close").on("click", function() {
-				$("#main-content svg").remove();
-				$("#main-content .row").remove();
-				$("#min2 svg").remove();
-				$("#min2 .close").remove();
-				$("#min svg").appendTo("#main-content")
-				$("#min .close").remove();
-			});
-		}
-	} else if (isInMin2) {
-		$("#main-content svg").remove();
-	} else if (isInMin) {
-		$("#main-content svg").remove();
-		$("#min2 svg").remove();
-		$("#min2 .close").remove();
-	}
+  if (isInMainContent) {
+    if ($("#min svg").length > 0 && $("#min2 svg").length == 0) {
+      // min is full, append the content to min2
+      $("#main-content svg").appendTo("#min2");
+      $("#min2").prepend(close);
+      makeSelectorActionableJQuery("#min2 .close");
+      $("#min2 .close").on("click", function() {
+        $("#main-content svg").remove();
+        $("#main-content .row").remove();
+        $("#min2 svg").appendTo("#main-content")
+        $("#min2 .close").remove();
+				$("#min3 svg").remove();
+        $("#min3 .close").remove();
+      });
+    } else if ($("#min svg").length > 0 && $("#min2 svg").length > 0) {
+      // min is full, min2 is full, append the content to min3
+      $("#main-content svg").appendTo("#min3");
+      $("#min3").prepend(close);
+      makeSelectorActionableJQuery("#min2 .close");
+      $("#min3 .close").on("click", function() {
+        $("#main-content svg").remove();
+        $("#main-content .row").remove();
+        $("#min3 svg").appendTo("#main-content")
+        $("#min3 .close").remove();
+      });
+
+    } else {
+      $("#main-content svg").appendTo("#min");
+      $("#min").prepend(close);
+      makeSelectorActionableJQuery("#min .close");
+      $("#min .close").on("click", function() {
+        $("#main-content svg").remove();
+        $("#main-content .row").remove();
+        $("#min2 svg").remove();
+        $("#min2 .close").remove();
+				$("#min3 svg").remove();
+        $("#min3 .close").remove();
+        $("#min svg").appendTo("#main-content")
+        $("#min .close").remove();
+      });
+    }
+  } else if (isInMin2) {
+    $("#main-content svg").remove();
+  } else if (isInMin) {
+    $("#main-content svg").remove();
+    $("#min2 svg").remove();
+    $("#min2 .close").remove();
+  }
 }
 
 
@@ -165,8 +184,8 @@ function loadSVG(file, elem, callback) {
     svg.removeAttr("y");
     svg.attr("height", "100%");
     svg.attr("width", "100%");
-		$(':BebasNeue').css("font-family", "Bebas Neue");
-		svg.append( "<defs><style type=\"text/css\">@import url('http://fonts.googleapis.com/css?family=Bebas+Neue');</style></defs>" );
+    $(':BebasNeue').css("font-family", "Bebas Neue");
+    svg.append("<defs><style type=\"text/css\">@import url('http://fonts.googleapis.com/css?family=Bebas+Neue');</style></defs>");
     callback();
   });
 }

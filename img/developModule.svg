@@ -6,7 +6,7 @@
 	 xml:space="preserve">
 <g id="freccia_1">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="253.62" y1="147" x2="319.083" y2="147"/>
 		<g>
 			<polygon points="316.749,154.978 330.564,147.001 316.749,139.023 			"/>
@@ -15,7 +15,7 @@
 </g>
 <g id="freccia_4">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="270.806" y1="447.84" x2="319.429" y2="491.672"/>
 		<g>
 			<polygon points="312.353,496.035 327.956,499.36 323.036,484.184 			"/>
@@ -24,7 +24,7 @@
 </g>
 <g id="freccia_5">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="628.821" y1="447.84" x2="580.198" y2="491.672"/>
 		<g>
 			<polygon points="576.59,484.183 571.67,499.359 587.274,496.034 			"/>
@@ -33,7 +33,7 @@
 </g>
 <g id="freccia_3">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="569.774" y1="375.952" x2="635.237" y2="375.952"/>
 		<g>
 			<polygon points="632.903,383.93 646.718,375.953 632.903,367.975 			"/>
@@ -42,35 +42,35 @@
 </g>
 <g id="freccia_3_1_">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="330.564" y1="375.952" x2="265.101" y2="375.952"/>
 		<g>
 			<polygon points="267.435,367.974 253.62,375.951 267.435,383.929 			"/>
 		</g>
 	</g>
 </g>
-<g id="cerchio_1">
-	
+<g id="match_CQ_with_ontology_design_patterns_ODP_cerchio_1">
+
 		<ellipse fill="#E30D15" stroke="#E30F19" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="442.12" cy="144.483" rx="83.071" ry="65.45"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="447.154" cy="149.518" rx="83.071" ry="65.45"/>
 </g>
 <g id="match_CQ_with_ontology_design_patterns_ODP">
 	<text transform="matrix(1 0 0 1 387.4409 129.4414)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">match CQ with</tspan><tspan x="-7.992" y="28.93" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">ontology design</tspan><tspan x="4.122" y="57.861" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">patterns ODP</tspan></text>
 </g>
-<g id="cerchio_3">
-	
+<g id="create_the_pattern_cerchio_3">
+
 		<ellipse fill="#E30D15" stroke="#E30F19" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="767.124" cy="371.473" rx="83.071" ry="65.45"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="772.159" cy="376.508" rx="83.071" ry="65.45"/>
 </g>
 <g id="create_the_pattern">
 	<text transform="matrix(1 0 0 1 742.0736 366.4315)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">create</tspan><tspan x="-20.636" y="28.93" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">the pattern</tspan></text>
 </g>
-<g id="cerchio_4">
-	
+<g id="integrate_the_pattern_cerchio_4">
+
 		<ellipse fill="#E30D15" stroke="#E30F19" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="143.689" cy="371.473" rx="83.071" ry="65.45"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="148.724" cy="376.508" rx="83.071" ry="65.45"/>
 </g>
 <g id="integrate_the_pattern">
@@ -127,7 +127,7 @@
 <ellipse id="cerchio_2" fill="none" stroke="#E2131B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="449.875" cy="375.952" rx="63.851" ry="49.481"/>
 <g id="freccia_2">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="449.875" y1="232.466" x2="449.875" y2="297.93"/>
 		<g>
 			<polygon points="441.897,295.595 449.874,309.411 457.852,295.595 			"/>
@@ -168,7 +168,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M494.04,32.522V54.96h17.128c0-0.486,0-0.972,0-1.458h-15.84V33.98h22.535v11.13c0.418,0,0.852,0,1.288,0
 			V32.522H494.04z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="510.88" y1="45.421" x2="521.574" y2="56.116"/>
 	</g>
 </g>
@@ -216,7 +216,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M817.668,253.497v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84v-19.522h22.535v11.13
 			c0.418,0,0.852,0,1.288,0v-12.588H817.668z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="834.508" y1="266.396" x2="845.202" y2="277.09"/>
 	</g>
 </g>
@@ -264,7 +264,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M194.233,253.497v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84v-19.522h22.535v11.13
 			c0.418,0,0.852,0,1.288,0v-12.588H194.233z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="211.073" y1="266.396" x2="221.768" y2="277.09"/>
 	</g>
 </g>

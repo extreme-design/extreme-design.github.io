@@ -24,7 +24,7 @@
 <text id="successful_test" transform="matrix(1 0 0 1 669.1013 358.2609)"><tspan x="0" y="0" fill="#B2116C" font-family="'BebasNeue'" font-size="24.1086">successful</tspan><tspan x="27.568" y="28.93" fill="#B2116C" font-family="'BebasNeue'" font-size="24.1086">test</tspan></text>
 <g id="freccia_1">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="213.697" y1="106.389" x2="279.16" y2="106.389"/>
 		<g>
 			<polygon points="276.826,114.367 290.641,106.39 276.826,98.412 			"/>
@@ -33,7 +33,7 @@
 </g>
 <g id="freccia_2">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="550.088" y1="106.389" x2="615.551" y2="106.389"/>
 		<g>
 			<polygon points="613.217,114.367 627.032,106.39 613.217,98.412 			"/>
@@ -48,7 +48,7 @@
 		z"/>
 	<g>
 		<g>
-			
+
 				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="683.211" y1="82.19" x2="683.211" y2="143.447"/>
 			<g>
 				<polygon fill="#FFFFFF" points="679.471,83.284 683.211,76.808 686.95,83.284 				"/>
@@ -57,19 +57,19 @@
 	</g>
 	<g>
 		<g>
-			
+
 				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="680.854" y1="143.447" x2="748.494" y2="143.447"/>
 			<g>
 				<polygon fill="#FFFFFF" points="747.4,147.187 753.876,143.448 747.4,139.708 				"/>
 			</g>
 		</g>
 	</g>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" points="683.211,140.945 
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" points="683.211,140.945
 		696.266,116.252 712.275,120.594 736.967,101.057 742.937,102.957 756.233,85.591 	"/>
 </g>
 <g id="freccia_3">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="716.935" y1="202.398" x2="716.935" y2="267.862"/>
 		<g>
 			<polygon points="708.956,265.527 716.934,279.343 724.912,265.527 			"/>
@@ -77,18 +77,18 @@
 	</g>
 </g>
 <g id="cerchio_4">
-	
+
 		<ellipse fill="#B2116C" stroke="#B2116C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="418.862" cy="463.321" rx="83.071" ry="65.45"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="423.897" cy="468.355" rx="83.071" ry="65.45"/>
 </g>
 <g id="Refactor_and_integrate">
 	<text transform="matrix(1 0 0 1 384.4823 458.2793)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">Refactor</tspan><tspan x="-19.287" y="28.93" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">and integrate</tspan></text>
 </g>
-<g id="cerchio_3">
-	
+<g id="publish_stable_release_cerchio_3">
+
 		<ellipse fill="#B2116C" stroke="#B2116C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="418.862" cy="283.006" rx="83.071" ry="65.45"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="423.897" cy="288.041" rx="83.071" ry="65.45"/>
 </g>
 <g id="Publish_stable_release">
@@ -96,7 +96,7 @@
 </g>
 <g id="freccia_5">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="607.178" y1="406.505" x2="546.924" y2="432.097"/>
 		<g>
 			<polygon points="545.954,423.841 536.356,436.584 552.191,438.527 			"/>
@@ -105,7 +105,7 @@
 </g>
 <g id="freccia_4">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="607.178" y1="353.491" x2="546.924" y2="327.899"/>
 		<g>
 			<polygon points="552.192,321.469 536.357,323.41 545.954,336.155 			"/>

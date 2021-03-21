@@ -29,7 +29,24 @@
 	"add_test_data_cerchio_3":"AddTestData",
 	"Add_test_data":"AddTestData",
 	"determine_expected_results_cerchio_4":"DetermineExpectedResults",
-	"Determine_expected_results":"DetermineExpectedResults"
-
+	"Determine_expected_results":"DetermineExpectedResults",
+	"match_CQ_with_ontology_design_patterns_ODP_cerchio_1":"MatchCQWithODP",
+	"match_CQ_with_ontology_design_patterns_ODP":"MatchCQWithODP",
+	"integrate_the_pattern_cerchio_4":"IntegrateThePattern",
+	"integrate_the_pattern":"IntegrateThePattern",
+	"create_the_pattern_cerchio_3":"CreateThePattern",
+	"create_the_pattern":"CreateThePattern",
+	"run_test_cerchio_2":"RunTest",
+	"run_test":"RunTest",
+	"document_cerchio_3":"Document",
+	"document":"Document",
+	"Publish_stable_release":"PublishStableRelease",
+	"publish_stable_release_cerchio_3":"PublishStableRelease",
+	"Add_annotations_cerchio_1":"AddAnnotations",
+	"Add_annotations":"AddAnnotations",
+	"Add_examples_cerchio_2":"AddExamples",
+	"Add_examples":"AddExamples",
+	"publish_the_ontology_cerchio_3_1_":"PublishTheOntology",
+	"Publish_the_ontology":"PublishTheOntology"
 
 }

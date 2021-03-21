@@ -36,17 +36,17 @@
 </g>
 <g>
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="388.822" y1="146.913" x2="454.285" y2="146.913"/>
 		<g>
 			<polygon points="451.951,154.891 465.766,146.914 451.951,138.936 			"/>
 		</g>
 	</g>
 </g>
-<g id="cerchio_1">
-	
+<g id="Add_annotations_cerchio_1">
+
 		<ellipse fill="#2EB4AB" stroke="#2CB4AB" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="580.066" cy="146.936" rx="83.071" ry="65.45"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="585.1" cy="151.971" rx="83.071" ry="65.45"/>
 </g>
 <g id="Add_annotations">
@@ -54,28 +54,28 @@
 </g>
 <g id="freccia_2">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="697.613" y1="146.913" x2="763.076" y2="146.913"/>
 		<g>
 			<polygon points="760.742,154.891 774.558,146.914 760.742,138.936 			"/>
 		</g>
 	</g>
 </g>
-<g id="cerchio_2">
-	
+<g id="Add_examples_cerchio_2">
+
 		<ellipse fill="#2EB4AB" stroke="#2CB4AB" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="888.857" cy="149.454" rx="83.071" ry="65.45"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="893.891" cy="154.488" rx="83.071" ry="65.45"/>
 </g>
 <g id="Add_examples">
 	<text transform="matrix(1 0 0 1 876.6321 140.4121)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">Add</tspan><tspan x="-23.879" y="28.93" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">examples</tspan></text>
 </g>
-<g id="cerchio_3_1_">
+<g id="publish_the_ontology_cerchio_3_1_">
 	<g>
-		
+
 			<ellipse fill="#2EB4AB" stroke="#2CB4AB" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="892.595" cy="471.257" rx="83.071" ry="65.45"/>
 	</g>
-	
+
 		<ellipse id="cerchio_3" fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="897.63" cy="476.292" rx="83.071" ry="65.45"/>
 </g>
 <g id="Publish_the_ontology">
@@ -83,7 +83,7 @@
 </g>
 <g id="freccia_3">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="893.891" y1="247.363" x2="893.891" y2="312.826"/>
 		<g>
 			<polygon points="885.913,310.492 893.891,324.308 901.869,310.492 			"/>
@@ -92,7 +92,7 @@
 </g>
 <g id="freccia_4">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="775.558" y1="476.292" x2="710.094" y2="476.292"/>
 		<g>
 			<polygon points="712.429,468.314 698.613,476.291 712.429,484.269 			"/>
@@ -104,7 +104,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M635.644,30.83v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84V32.288h22.535v11.13
 			c0.418,0,0.852,0,1.288,0V30.83H635.644z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="652.484" y1="43.729" x2="663.179" y2="54.424"/>
 	</g>
 </g>
@@ -152,7 +152,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M943.091,30.83v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84V32.288h22.535v11.13
 			c0.418,0,0.852,0,1.288,0V30.83H943.091z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="959.931" y1="43.729" x2="970.625" y2="54.424"/>
 	</g>
 </g>
@@ -200,7 +200,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M943.091,350.107v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84v-19.522h22.535v11.13
 			c0.418,0,0.852,0,1.288,0v-12.588H943.091z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="959.931" y1="363.006" x2="970.625" y2="373.701"/>
 	</g>
 </g>

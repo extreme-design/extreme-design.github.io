@@ -21,17 +21,17 @@
 </g>
 <g id="freccia_1">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="194.541" y1="168.127" x2="260.005" y2="168.127"/>
 		<g>
 			<polygon points="257.67,176.105 271.486,168.128 257.67,160.149 			"/>
 		</g>
 	</g>
 </g>
-<g id="cerchio_1">
-	
+<g id="Substitute_ephemeral_prefixes_cerchio_1">
+
 		<ellipse fill="#D7579B" stroke="#D6579A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="383.041" cy="165.609" rx="83.071" ry="65.45"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="388.076" cy="170.644" rx="83.071" ry="65.45"/>
 </g>
 <g id="Substitute_ephemeral_prefixes">
@@ -39,43 +39,43 @@
 </g>
 <g id="freccia_3">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="824.496" y1="168.127" x2="889.959" y2="168.127"/>
 		<g>
 			<polygon points="887.625,176.105 901.44,168.128 887.625,160.149 			"/>
 		</g>
 	</g>
 </g>
-<g id="cerchio_3">
-	
+<g id="document_cerchio_3">
+
 		<ellipse fill="#D7579B" stroke="#D6579A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="1012.995" cy="165.609" rx="83.071" ry="65.45"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="1018.03" cy="170.644" rx="83.071" ry="65.45"/>
 </g>
-<g>
+<g id="document">
 	<text transform="matrix(1 0 0 1 975.9758 172.7694)" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">Document</text>
 </g>
 <g id="freccia_2">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="506.629" y1="168.127" x2="572.092" y2="168.127"/>
 		<g>
 			<polygon points="569.758,176.105 583.574,168.128 569.758,160.149 			"/>
 		</g>
 	</g>
 </g>
-<g id="cerchio_2">
-	
+<g id="run_test_cerchio_2">
+
 		<ellipse fill="#D7579B" stroke="#D6579A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="695.129" cy="165.609" rx="83.071" ry="65.45"/>
-	
+
 		<ellipse fill="none" stroke="#050A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="700.164" cy="170.644" rx="83.071" ry="65.45"/>
 </g>
-<g>
+<g id="run_test">
 	<text transform="matrix(1 0 0 1 663.4612 173.7694)" fill="#FFFFFF" font-family="'BebasNeue'" font-size="24.1086">Run test</text>
 </g>
 <g id="freccia_4">
 	<g>
-		
+
 			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="697.875" y1="258.466" x2="697.875" y2="323.93"/>
 		<g>
 			<polygon points="689.897,321.595 697.874,335.411 705.852,321.595 			"/>
@@ -90,7 +90,7 @@
 		V463.577z"/>
 	<g>
 		<g>
-			
+
 				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="665.296" y1="387.654" x2="665.296" y2="448.911"/>
 			<g>
 				<polygon fill="#FFFFFF" points="661.557,388.748 665.296,382.272 669.036,388.748 				"/>
@@ -99,14 +99,14 @@
 	</g>
 	<g>
 		<g>
-			
+
 				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="662.94" y1="448.911" x2="730.58" y2="448.911"/>
 			<g>
 				<polygon fill="#FFFFFF" points="729.486,452.651 735.962,448.912 729.486,445.172 				"/>
 			</g>
 		</g>
 	</g>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" points="665.296,446.409 
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" points="665.296,446.409
 		678.351,421.716 694.36,426.058 719.053,406.521 725.022,408.42 738.318,391.055 	"/>
 </g>
 <g id="lavagna_1">
@@ -114,7 +114,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M436.103,49.673v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84V51.131h22.535v11.13
 			c0.418,0,0.852,0,1.288,0V49.673H436.103z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="452.943" y1="62.572" x2="463.637" y2="73.266"/>
 	</g>
 </g>
@@ -162,7 +162,7 @@
 	<g>
 		<path fill="#FFFFFF" d="M1063.54,49.673v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84V51.131h22.535v11.13
 			c0.418,0,0.852,0,1.288,0V49.673H1063.54z"/>
-		
+
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="1080.38" y1="62.572" x2="1091.074" y2="73.266"/>
 	</g>
 </g>

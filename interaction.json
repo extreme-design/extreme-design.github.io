@@ -97,6 +97,62 @@
       "title": "Determine expected results",
       "body": "Depending on the test data, determine what output would be correct. For example, specify the data with testAnnotationSchema:hasExpectedResult property."
     }
+  },
+	"MatchCQWithODP": {
+    "click": {
+      "type": "text",
+      "title": "Match CQ with ODP",
+      "body": "The design team analyses possible existing ontology design patterns (ODPs) which can answer to the same CQ extracted from the requirement collection.<br/>Often ODP’s CQs are more general than the domain-specific CQs of an ontology project. In such case the designer will generalise the CQ’s further, to understand if the candidate ODP can be reused, and then specialize its properties and/or classes."
+    }
+  },
+	"IntegrateThePattern": {
+    "click": {
+      "type": "text",
+      "title": "Integrate the Pattern",
+      "body": "Create a new piece of OWL ontology reusing or specializing properties and/or classes of candidate ODP."
+    }
+  },
+	"CreateThePattern": {
+    "click": {
+      "type": "text",
+      "title": "Create a New Pattern",
+      "body": "You can define a permanent URI and implement the ODP in OWL, to publish the pattern in the ODP catalogue."
+    }
+  },
+	"RunTest": {
+    "click": {
+      "type": "text",
+      "title": "Run Test",
+      "body": "Execute the procedure you choose on the test run OWL-file with its test data, and record the results."
+    }
+  },
+	"Document": {
+    "click": {
+      "type": "text",
+      "title": "Document",
+      "body": "Store all information about the test run and its related test case by using the testAnnotationSchema:executionComment."
+    }
+  },
+	"AddAnnotations": {
+    "click": {
+      "type": "text",
+      "title": "Add Annotations",
+      "body": "Annotate the ontology to link classes, properties and patterns to other ontologies.<br/>To annotate patterns you can use <a href=\"http://ontologydesignpatterns.org/opla/\">OPLA</a>."
+    }
+  },
+	"AddExamples": {
+    "click": {
+      "type": "text",
+      "title": "Add Examples",
+      "body": "TODO"
+    }
+  },
+	"PublishTheOntology": {
+    "click": {
+      "type": "text",
+      "title": "Publish the Ontology",
+      "body": "Publish the ontology on GitHub or on your own web server.<br/>To publish the ontology on GitHub: <ul><li>Create a repository for the ontology</li><li>Commit and push</li><li>Create a version tag</li><li>Publsh release</li></ul><br/>To publish the ontology on your own server:<ul><li>Create directory for the release</li><li>Upload the ontology</li></ul>"
+    }
   }
 
 }
