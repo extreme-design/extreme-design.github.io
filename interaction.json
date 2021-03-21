@@ -144,7 +144,7 @@
     "click": {
       "type": "text",
       "title": "Add Examples",
-      "body": "TODO"
+      "body": "TBD"
     }
   },
 	"PublishTheOntology": {
@@ -158,7 +158,7 @@
     "click": {
       "type": "text",
       "title": "Refactor and integrate",
-      "body": "TODO",
+      "body": "TBD",
 			"background":"red",
 			"color":"white"
     }
@@ -167,14 +167,14 @@
     "click": {
       "type": "text",
       "title": "Substitute Ephemeral Prefixes",
-      "body": "TODO"
+      "body": "TBD"
     }
   },
 	"SubmitTheOntologyToADomainExpert": {
     "click": {
       "type": "text",
       "title": "Sumbmit the ontology to a domain expert",
-      "body": "TODO"
+      "body": "TBD"
     }
   },
 	"Customer": {
@@ -237,21 +237,21 @@
 		"click": {
       "type": "text",
       "title": "Contacts",
-      "body": "TODO"
+      "body": "TBD"
     }
 	},
 	"Links" :{
 		"click": {
       "type": "text",
       "title": "Links",
-      "body": "TODO"
+      "body": "TBD"
     }
 	},
 	"Papers" :{
 		"click": {
       "type": "text",
       "title": "Papers",
-      "body": "TODO"
+      "body": "TBD"
     }
 	}
 }
