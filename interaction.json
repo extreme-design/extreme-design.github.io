@@ -160,6 +160,20 @@
       "title": "Refactor and integrate",
       "body": "TODO"
     }
+  },
+	"SubstituteEphemeralPrefixes": {
+    "click": {
+      "type": "text",
+      "title": "Substitute Ephemeral Prefixes",
+      "body": "TODO"
+    }
+  },
+	"SubmitTheOntologyToADomainExpert": {
+    "click": {
+      "type": "text",
+      "title": "Sumbmit the ontology to a domain expert",
+      "body": "TODO"
+    }
   }
 
 }

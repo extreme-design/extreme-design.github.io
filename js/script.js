@@ -178,8 +178,6 @@ function click(elem) {
   }
 }
 
-var images = {};
-
 function loadSVG(file, selector, callback) {
 	debug("load svg "+file)
 	elem = $(selector)
@@ -200,6 +198,7 @@ function loadSVG(file, selector, callback) {
 
 }
 
+/*
 function parseTransform(a) {
   var b = {};
   for (var i in a = a.match(/(\w+\((\-?\d+\.?\d*e?\-?\d*,?)+\))+/g)) {
@@ -208,3 +207,4 @@ function parseTransform(a) {
   }
   return b;
 }
+*/

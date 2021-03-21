@@ -49,6 +49,9 @@
 	"publish_the_ontology_cerchio_3_1_":"PublishTheOntology",
 	"Publish_the_ontology":"PublishTheOntology",
 	"quadrato_verde":"RefactorAndIntegrate",
-	"Refactor_and_integrate_3_":"RefactorAndIntegrate"
+	"Refactor_and_integrate_3_":"RefactorAndIntegrate",
+	"Substitute_ephemeral_prefixes_cerchio_1":"SubstituteEphemeralPrefixes",
+	"Substitute_ephemeral_prefixes":"SubstituteEphemeralPrefixes",
+	"Submit_ontology_module_to_domain_expert":"SubmitTheOntologyToADomainExpert"
 
 }
