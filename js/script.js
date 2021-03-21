@@ -8,6 +8,8 @@ var classes;
 debug = console.log
 //debug = function() {}
 
+addActionOnA();
+
 var h = ['main'];
 
 $(document).ready(function() {
@@ -102,9 +104,14 @@ function setActionJQuery(clazz, action, svg) {
 
 function addActionOnA(){
 	$('a').click(function(e2) {
-		debug("Click " + $(this).attr("href"));
+		debug("Click " + $(this).attr("href")+ " "+$(this).attr("nav-button"));
 		if ($(this).attr("href") in interaction) {
 			e2.preventDefault();
+
+			if($(this).attr("nav-button")){
+				click($("#main-content svg"));
+			}
+
 			var ref = $(this).attr("href");
 			debug($(this).parent().attr("key"))
 			debug(interaction[ref])
@@ -155,7 +162,7 @@ function getText(title, body, background, color, back, key) {
 
   result += `
 
-										<h1 style="color: ${color}; font-family: 'Bebas Neue'; font-size: 48px;">${title}</h1>
+										<h1 style="color: ${color}; font-family: 'Bebas Neue'; font-size: 2.5rem;">${title}</h1>
 										<p style="color: ${color};" key="${key}">${body}</p>
 									</div>
 								</div>

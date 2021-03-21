@@ -232,5 +232,26 @@
       "title": "Integration Team",
       "body": "The integration team takes care of integrating the different components."
     }
+	},
+	"Contacts" :{
+		"click": {
+      "type": "text",
+      "title": "Contacts",
+      "body": "TODO"
+    }
+	},
+	"Links" :{
+		"click": {
+      "type": "text",
+      "title": "Links",
+      "body": "TODO"
+    }
+	},
+	"Papers" :{
+		"click": {
+      "type": "text",
+      "title": "Papers",
+      "body": "TODO"
+    }
 	}
 }
