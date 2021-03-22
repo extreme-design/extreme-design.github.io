@@ -6,7 +6,7 @@ var text;
 var classes;
 
 debug = console.log
-//debug = function() {}
+debug = function() {}
 
 addActionOnA();
 
