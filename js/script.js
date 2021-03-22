@@ -6,7 +6,7 @@ var text;
 var classes;
 
 debug = console.log
-debug = function() {}
+//debug = function() {}
 
 addActionOnA();
 
@@ -57,7 +57,7 @@ function addClasses() {
   for (var k in classes) {
     var elm = $("#" + k);
     if (elm.length == 0) {
-      //console.log("Und key " + k);
+    	debug("Undefined key " + k);
     } else {
       elm.addClass(classes[k]);
       elm.children().addClass(classes[k]);

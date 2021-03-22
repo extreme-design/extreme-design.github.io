@@ -253,5 +253,241 @@
       "title": "Papers",
       "body": "TBD"
     }
+	},
+	"CollectRequirementsRoles" :{
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Collect Requirements''",
+      "body": "<ul><li><a href=\"Customer\">Customer</a></li><li><a href=\"Designer\">Designer</a></li></lu>"
+    }
+	},
+	"FormalizeRequirementsRoles" :{
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Formalize Requirements''",
+      "body": "<ul><li><a href=\"Customer\">Customer</a></li><li><a href=\"Designer\">Designer</a></li></lu>"
+    }
+	},
+	"DefineTestCaseRoles" :{
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Define Test Case''",
+      "body": "<ul><li><a href=\"Customer\">Customer</a></li><li><a href=\"Tester\">Tester</a></li></lu>"
+    }
+	},
+	"DevelopModulesRoles" :{
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Develop Modules''",
+      "body": "<ul><li><a href=\"Designer\">Designer</a></li></lu>"
+    }
+	},
+	"DevelopModulesRoles" :{
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Develop Modules''",
+      "body": "<ul><li><a href=\"Designer\">Designer</a></li></lu>"
+    }
+	},
+	"RunAlphaTestingRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Develop Modules''",
+      "body": "<ul><li><a href=\"Tester\">Tester</a></li></lu>"
+    }
+	},
+	"RefactorAndIntegrateRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Refactor and Integrate''",
+      "body": "<ul><li><a href=\"Designer\">Designer</a></li></lu>"
+    }
+	},
+	"RunBetaTestingRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Run Beta Testing''",
+      "body": "<ul><li><a href=\"Tester\">Tester</a></li></lu>"
+    }
+	},
+	"PublishStableReleaseRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Publish Stable Release''",
+      "body": "<ul><li><a href=\"Designer\">Designer</a></li></lu>"
+    }
+	},
+	"CollectRequirementsExamples" : {
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Collect requirements''",
+      "body": "<ul><li><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfxsmTwAVI5mF5uiZUnveUcAJwMAucEAN3UfG1gYZxvahq4oA/viewform?gxids=7628\">Forms for collecting stories for the ArCo ontology</a></li><li><a href=\"https://github.com/ICCD-MiBACT/ArCo/issues\">Issue tracker for the ArCo ontology</a></li></lu>"
+    }
+	},
+	"FormalizeRequirementsExamples" : {
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Formalize Requirements''",
+      "body": "TBD"
+    }
+	},
+	"DefineTestCaseExamples" : {
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Define Test Case''",
+      "body": "TBD"
+    }
+	},
+	"DevelopModulesExamples" : {
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Develop Module''",
+      "body": "TBD"
+    }
+	},
+	"RunAlphaTestingExamples" : {
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Run Alpha Testing''",
+      "body": "TBD"
+    }
+	},
+	"RefactorAndIntegrateExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Refactor and Integrate''",
+      "body": "TBD"
+    }
+	},
+	"RunBetaTestingExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Run Beta Testing''",
+      "body": "TBD"
+    }
+	},
+	"PublishStableReleaseExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Publish Release''",
+      "body": "TBD"
+    }
+	},
+	"CollectRequirementsTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Collect Requirements''",
+      "body": "TBD"
+    }
+	},
+	"FormalizeRequirementsTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Formalize Requirements''",
+      "body": "TBD"
+    }
+	},
+	"DefineTestCaseTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Define Test Case''",
+      "body": "TBD"
+    }
+	},
+	"DevelopModulesTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Develop Modules''",
+      "body": "TBD"
+    }
+	},
+	"RunAlphaTestingTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Run Alpha Testing''",
+      "body": "TBD"
+    }
+	},
+	"RefactorAndIntegrateTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Refactor and Integrate''",
+      "body": "TBD"
+    }
+	},
+	"RunBetaTestingTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Run Beta Testing''",
+      "body": "TBD"
+    }
+	},
+	"PublishStableReleaseTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Publish Stable Release''",
+      "body": "TBD"
+    }
+	},
+	"TestCase":{
+		"click": {
+      "type": "text",
+      "title": "Test Case",
+      "body": "TBD"
+    }
+	},
+	"UnstableOntology":{
+		"click": {
+      "type": "text",
+      "title": "Unstable Ontology",
+      "body": "TBD"
+    }
+	},
+	"AlphaVersionOntology":{
+		"click": {
+      "type": "text",
+      "title": "Alpha Version Ontology",
+      "body": "TBD"
+    }
+	},
+	"TestRunResults":{
+		"click": {
+      "type": "text",
+      "title": "Results of the Run of the Alpha Tests",
+      "body": "TBD"
+    }
+	},
+	"BetaTestResults":{
+		"click": {
+      "type": "text",
+      "title": "Results of the Run of the Beta Tests",
+      "body": "TBD"
+    }
+	},
+	"StableOntology" : {
+		"click": {
+      "type": "text",
+      "title": "Stable Ontology",
+      "body": "TBD"
+    }
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
