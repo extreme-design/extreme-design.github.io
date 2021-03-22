@@ -256,7 +256,9 @@ function loadSVG(file, selector, callback) {
     svg.attr("width", "100%");
     svg.attr("filename", file)
     $(':BebasNeue').css("font-family", "Bebas Neue");
-    svg.append("<defs><style type=\"text/css\">@import url('http://fonts.googleapis.com/css?family=Bebas+Neue');</style></defs>");
+		//https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap
+    //svg.append("<defs><style type=\"text/css\">@import url('http://fonts.googleapis.com/css?family=Bebas+Neue');</style></defs>");
+		svg.append("<defs><style type=\"text/css\">@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');</style></defs>");
     callback();
   });
 
