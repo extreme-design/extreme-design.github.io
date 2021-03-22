@@ -103,6 +103,7 @@ function setActionJQuery(clazz, action, svg) {
 }
 
 function addActionOnA(){
+	debug("add action on A")
 	$('a').click(function(e2) {
 		debug("Click " + $(this).attr("href")+ " "+$(this).attr("nav-button"));
 		if ($(this).attr("href") in interaction) {
