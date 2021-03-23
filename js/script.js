@@ -8,7 +8,7 @@ var classes;
 debug = console.log
 //debug = function() {}
 
-addActionOnNavBar();
+$('a[nav-button]').click(clicklink);
 
 var h = ['main'];
 
@@ -57,7 +57,7 @@ function addClasses() {
   for (var k in classes) {
     var elm = $("#" + k);
     if (elm.length == 0) {
-    	debug("Undefined key " + k);
+      debug("Undefined key " + k);
     } else {
       elm.addClass(classes[k]);
       elm.children().addClass(classes[k]);
@@ -91,80 +91,55 @@ function setActionJQuery(clazz, action, svg) {
     } else if (action[e]["type"] == "text") {
       $("." + clazz + ":not([clickable])").on(e, function(ev) {
         ev.stopPropagation();
+        debug("Click on " + clazz)
         click($(this));
         var toappend = getText(action[e]["title"], action[e]["body"], action[e]["background"], action[e]["color"], null, clazz);
         $("#main-content .row").remove();
         $("#main-content").append(toappend);
-				addActionOnA();
+				h.push(clazz);
+        $('a:not([nav-button])').click(clicklink);
       });
     }
-
   }
 }
 
-function addActionOnA(){
-	debug("hey")
-	debug($("a:not([nav-button])"))
-	debug("add action on A ")
-	$('a:not([nav-button])').click(function(e2) {
-		debug("Click " + $(this).attr("href")+ " "+$(this).attr("nav-button"));
-		if ($(this).attr("href") in interaction) {
-			e2.preventDefault();
 
-			if($(this).attr("nav-button")){
-				click($("#main-content svg"));
-			}
 
-			var ref = $(this).attr("href");
-			debug($(this).parent().attr("key"))
-			debug(interaction[ref])
-			debug(interaction[ref]["click"]["title"])
+function clicklink(e2) {
+  debug("Click " + $(this).attr("href") + " " + $(this).attr("nav-button"));
+  if ($(this).attr("href") in interaction) {
+    e2.preventDefault();
 
-			if($(this).attr("back")){
-				h.pop();
-			}
+    if ($(this).attr("nav-button")) {
+      click($("#main-content svg"));
+    }
 
-			if($(this).parent().attr("key")!=undefined){
-				h.push($(this).parent().attr("key"));
-			}
+    var ref = $(this).attr("href");
+    debug($(this).parent().attr("key"))
+    debug(interaction[ref])
+    debug(interaction[ref]["click"]["title"])
 
-			var toappend2 = getText(interaction[ref]["click"]["title"], interaction[ref]["click"]["body"], interaction[ref]["click"]["background"], interaction[ref]["click"]["color"], $(this).parent().attr("key"), ref);
-			$("#main-content .row").remove();
-			$("#main-content").append(toappend2)
-			addActionOnA();
-		}
-	});
-}
+    if ($(this).attr("back")) {
+      debug("POP "+h.pop());
+			if(h[h.length-1]!="main")
+				debug("POP "+h.pop());
+			debug(h[h.length-1])
+    }
 
-function addActionOnNavBar(){
-	$('a[nav-button]').click(function(e2) {
-		debug("Click " + $(this).attr("href")+ " "+$(this).attr("nav-button"));
-		if ($(this).attr("href") in interaction) {
-			e2.preventDefault();
+    //if ($(this).parent().attr("key") != undefined) {
+      //h.push($(this).parent().attr("key"));
+    //}
 
-			if($(this).attr("nav-button")){
-				click($("#main-content svg"));
-			}
+    var toappend2 = getText(interaction[ref]["click"]["title"], interaction[ref]["click"]["body"], interaction[ref]["click"]["background"], interaction[ref]["click"]["color"], $(this).parent().attr("key"), ref);
+    $("#main-content .row").remove();
+    $("#main-content").append(toappend2)
 
-			var ref = $(this).attr("href");
-			debug($(this).parent().attr("key"))
-			debug(interaction[ref])
-			debug(interaction[ref]["click"]["title"])
+		if (!$(this).attr("back")) {
+      h.push($(this).attr("href"))
+    }
 
-			if($(this).attr("back")){
-				h.pop();
-			}
-
-			if($(this).parent().attr("key")!=undefined){
-				h.push($(this).parent().attr("key"));
-			}
-
-			var toappend2 = getText(interaction[ref]["click"]["title"], interaction[ref]["click"]["body"], interaction[ref]["click"]["background"], interaction[ref]["click"]["color"], $(this).parent().attr("key"), ref);
-			$("#main-content .row").remove();
-			$("#main-content").append(toappend2)
-			addActionOnA();
-		}
-	});
+    $('a:not([nav-button])').click(clicklink);
+  }
 }
 
 function getText(title, body, background, color, back, key) {
@@ -180,7 +155,7 @@ function getText(title, body, background, color, back, key) {
   }
 
   debug("Color " + color)
-	debug(h)
+  debug(h)
 
   var result = `
     <div class="row text-content" style="height:100%;">
@@ -190,9 +165,11 @@ function getText(title, body, background, color, back, key) {
 								<div id="text-content-text">
 									<div>`;
 
-  if (h[h.length-1] != "main") {
-    result += `<a href="${h[h.length-1]}" style="text-decoration: none;" back="true"><i class="fas fa-arrow-left"></i> Back</a>`;
-  }
+
+    if (h[h.length - 1] != "main") {
+      result += `<a href="${h[h.length-1]}" style="text-decoration: none;" back="true"><i class="fas fa-arrow-left"></i> Back</a>`;
+    }
+
 
   result += `
 
@@ -289,9 +266,9 @@ function loadSVG(file, selector, callback) {
     svg.attr("width", "100%");
     svg.attr("filename", file)
     $(':BebasNeue').css("font-family", "Bebas Neue");
-		//https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap
+    //https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap
     //svg.append("<defs><style type=\"text/css\">@import url('http://fonts.googleapis.com/css?family=Bebas+Neue');</style></defs>");
-		svg.append("<defs><style type=\"text/css\">@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');</style></defs>");
+    svg.append("<defs><style type=\"text/css\">@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');</style></defs>");
     callback();
   });
 
