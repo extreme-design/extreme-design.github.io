@@ -8,7 +8,7 @@ var classes;
 debug = console.log
 //debug = function() {}
 
-addActionOnA();
+addActionOnNavBar();
 
 var h = ['main'];
 
@@ -103,8 +103,41 @@ function setActionJQuery(clazz, action, svg) {
 }
 
 function addActionOnA(){
-	debug("add action on A")
-	$('a').click(function(e2) {
+	debug("hey")
+	debug($("a:not([nav-button])"))
+	debug("add action on A ")
+	$('a:not([nav-button])').click(function(e2) {
+		debug("Click " + $(this).attr("href")+ " "+$(this).attr("nav-button"));
+		if ($(this).attr("href") in interaction) {
+			e2.preventDefault();
+
+			if($(this).attr("nav-button")){
+				click($("#main-content svg"));
+			}
+
+			var ref = $(this).attr("href");
+			debug($(this).parent().attr("key"))
+			debug(interaction[ref])
+			debug(interaction[ref]["click"]["title"])
+
+			if($(this).attr("back")){
+				h.pop();
+			}
+
+			if($(this).parent().attr("key")!=undefined){
+				h.push($(this).parent().attr("key"));
+			}
+
+			var toappend2 = getText(interaction[ref]["click"]["title"], interaction[ref]["click"]["body"], interaction[ref]["click"]["background"], interaction[ref]["click"]["color"], $(this).parent().attr("key"), ref);
+			$("#main-content .row").remove();
+			$("#main-content").append(toappend2)
+			addActionOnA();
+		}
+	});
+}
+
+function addActionOnNavBar(){
+	$('a[nav-button]').click(function(e2) {
 		debug("Click " + $(this).attr("href")+ " "+$(this).attr("nav-button"));
 		if ($(this).attr("href") in interaction) {
 			e2.preventDefault();
