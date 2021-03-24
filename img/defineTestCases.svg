@@ -162,7 +162,7 @@
 			c-0.042-0.662,0.147-1.204,0.696-1.532C89.564,455.826,90.013,455.963,90.438,455.916z"/>
 	</g>
 </g>
-<g id="lavagna_1">
+<g id="formulate_test_procedures_lavagna_1">
 	<circle fill="#514998" cx="440.883" cy="47.773" r="23.692"/>
 	<g>
 		<path fill="#FFFFFF" d="M428.358,35.693v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84V37.151h22.535v11.13
@@ -171,7 +171,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="445.198" y1="48.593" x2="455.893" y2="59.287"/>
 	</g>
 </g>
-<g id="tools_1">
+<g id="formulate_test_procedures_tools_1">
 	<g id="Tools_1">
 		<circle fill="#72B62B" cx="377.595" cy="47.946" r="23.176"/>
 	</g>
@@ -194,7 +194,7 @@
 			l-2.382,2.382l3.543,3.28l2.244-2.244c2.092,0.792,4.546,0.343,6.229-1.34C393.621,44.204,394.136,42.085,393.661,40.159z"/>
 	</g>
 </g>
-<g id="cappello_1">
+<g id="formulate_test_procedures_cappello_1">
 	<circle fill="#D02517" cx="314.278" cy="47.634" r="23.225"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M324.144,47.751c-0.081-0.879-0.165-1.902-0.242-3.02
@@ -210,7 +210,7 @@
 		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="324.144" y1="47.751" x2="324.42" y2="51.472"/>
 	</g>
 </g>
-<g id="lavagna_2">
+<g id="define_test_case_lavagna_2">
 	<circle fill="#514998" cx="764.911" cy="47.773" r="23.692"/>
 	<g>
 		<path fill="#FFFFFF" d="M752.386,35.693v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84V37.151h22.535v11.13
@@ -219,7 +219,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="769.226" y1="48.593" x2="779.92" y2="59.287"/>
 	</g>
 </g>
-<g id="tools_2">
+<g id="define_test_case_tools_2">
 	<g id="Tools_1_1_">
 		<circle fill="#72B62B" cx="701.622" cy="47.946" r="23.176"/>
 	</g>
@@ -242,7 +242,7 @@
 			l-2.382,2.382l3.543,3.28l2.244-2.244c2.092,0.792,4.547,0.343,6.229-1.34C717.649,44.204,718.163,42.085,717.688,40.159z"/>
 	</g>
 </g>
-<g id="cappello_2">
+<g id="define_test_cases_cappello_2">
 	<circle fill="#D02517" cx="638.305" cy="47.634" r="23.225"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M648.171,47.751c-0.081-0.879-0.165-1.902-0.242-3.02
@@ -258,7 +258,7 @@
 		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="648.171" y1="47.751" x2="648.448" y2="51.472"/>
 	</g>
 </g>
-<g id="lavagna_3">
+<g id="add_test_data_lavagna_3">
 	<circle fill="#514998" cx="764.911" cy="354.776" r="23.692"/>
 	<g>
 		<path fill="#FFFFFF" d="M752.386,342.696v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84v-19.522h22.535v11.13
@@ -267,7 +267,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="769.226" y1="355.596" x2="779.92" y2="366.29"/>
 	</g>
 </g>
-<g id="tools_3">
+<g id="add_test_data_tools_3">
 	<g id="Tools_1_2_">
 		<circle fill="#72B62B" cx="701.622" cy="354.949" r="23.176"/>
 	</g>
@@ -290,7 +290,7 @@
 			l-2.382,2.382l3.543,3.28l2.244-2.244c2.092,0.792,4.547,0.343,6.229-1.34C717.649,351.207,718.163,349.089,717.688,347.162z"/>
 	</g>
 </g>
-<g id="cappello_3">
+<g id="add_test_data_cappello_3">
 	<circle fill="#D02517" cx="638.305" cy="354.637" r="23.225"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M648.171,354.754c-0.081-0.879-0.165-1.902-0.242-3.02
@@ -306,7 +306,7 @@
 		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="648.171" y1="354.754" x2="648.448" y2="358.475"/>
 	</g>
 </g>
-<g id="lavagna_4">
+<g id="determine_expected_results_lavagna_4">
 	<circle fill="#514998" cx="447.113" cy="354.776" r="23.692"/>
 	<g>
 		<path fill="#FFFFFF" d="M434.588,342.696v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84v-19.522h22.535v11.13
@@ -315,7 +315,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="451.428" y1="355.596" x2="462.122" y2="366.29"/>
 	</g>
 </g>
-<g id="tools_4">
+<g id="determine_expected_results_tools_4">
 	<g id="Tools_1_3_">
 		<circle fill="#72B62B" cx="383.824" cy="354.949" r="23.176"/>
 	</g>
@@ -338,7 +338,7 @@
 			l-2.382,2.382l3.543,3.28l2.244-2.244c2.092,0.792,4.546,0.343,6.229-1.34C399.85,351.207,400.365,349.089,399.89,347.162z"/>
 	</g>
 </g>
-<g id="cappello_4">
+<g id="determine_expected_results_cappello_4">
 	<circle fill="#D02517" cx="320.507" cy="354.637" r="23.225"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M330.373,354.754c-0.081-0.879-0.165-1.902-0.242-3.02

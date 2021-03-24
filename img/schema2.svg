@@ -81,7 +81,7 @@
 <g id="establish_general_constraints_and_competency_questions">
 	<text transform="matrix(1 0 0 1 495.2531 98.1044)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BebasNeue'" font-size="17.5889">establish general</tspan><tspan x="5.321" y="21.107" fill="#FFFFFF" font-family="'BebasNeue'" font-size="17.5889">constraints and</tspan><tspan x="18.434" y="42.213" fill="#FFFFFF" font-family="'BebasNeue'" font-size="17.5889">competency</tspan><tspan x="24.782" y="63.32" fill="#FFFFFF" font-family="'BebasNeue'" font-size="17.5889">questions</tspan></text>
 </g>
-<g id="lavagna_1">
+<g id="create_smaller_stories_lavagna_1">
 	<circle fill="#514998" cx="326.228" cy="39.325" r="18.64"/>
 	<g>
 		<path fill="#FFFFFF" d="M316.374,29.821v17.653h13.476c0-0.382,0-0.765,0-1.147h-12.463V30.968h17.73v8.757
@@ -123,7 +123,7 @@
 		h-96.604c-1.628,0-2.948-1.923-2.948-4.296V80.23c0-2.373,1.32-4.296,2.948-4.296h96.604c1.628,0,2.948,1.923,2.948,4.296V159.845z
 		"/>
 </g>
-<g id="cappello_1">
+<g id="create_smaller_stories_cappello_1">
 	<circle fill="#D02517" cx="279.656" cy="39.204" r="18.757"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M287.624,39.299c-0.065-0.71-0.134-1.536-0.196-2.439
@@ -139,7 +139,7 @@
 		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="287.624" y1="39.299" x2="287.847" y2="42.304"/>
 	</g>
 </g>
-<g id="lavagna_2">
+<g id="establish_general_constraints_and_competency_questions_lavagna_2">
 	<circle fill="#514998" cx="571.127" cy="39.325" r="18.64"/>
 	<g>
 		<path fill="#FFFFFF" d="M561.273,29.821v17.653h13.476c0-0.382,0-0.765,0-1.147h-12.463V30.968h17.73v8.757
@@ -148,7 +148,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="574.522" y1="39.97" x2="582.936" y2="48.383"/>
 	</g>
 </g>
-<g id="cappello_2">
+<g id="establish_general_constraints_and_competency_questions_cappello_1">
 	<circle fill="#D02517" cx="524.554" cy="39.204" r="18.757"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M532.522,39.299c-0.065-0.71-0.134-1.536-0.196-2.439

@@ -88,5 +88,26 @@
 	"grafo_arancione_2_":"AlphaVersionOntology",
 	"grafo_verde":"TestRunResults",
 	"grafico_blu_4_":"BetaTestResults",
-	"grafo_verde_2":"StableOntology"
+	"grafo_verde_2":"StableOntology",
+
+	"create_smaller_stories_cappello_1":"CreateSmallerStoriesRoles",
+	"establish_general_constraints_and_competency_questions_cappello_1":"EstablishGeneralConstraintsRoles",
+	"create_smaller_stories_lavagna_1":"CreateSmallerStoriesExamples",
+	"establish_general_constraints_and_competency_questions_lavagna_2":"EstablishGeneralConstraintsExamples",
+
+	"formulate_test_procedures_cappello_1":"FormulateTestProceduresRoles",
+	"formulate_test_procedures_tools_1":"FormulateTestProceduresTools",
+	"formulate_test_procedures_lavagna_1":"FormulateTestProceduresExamples",
+	"define_test_cases_cappello_2":"DefineTestCaseRoles",
+	"define_test_case_tools_2":"DefineTestCaseTools",
+	"define_test_case_lavagna_2":"DefineTestCaseExamples",
+	"add_test_data_cappello_3":"AddTestDataRoles",
+	"add_test_data_tools_3":"AddTestDataTools",
+	"add_test_data_lavagna_3":"AddTestDataExamples",
+	"determine_expected_results_cappello_4":"DetermineExpectedResultsRoles",
+	"determine_expected_results_tools_4":"DetermineExpectedResultsTools",
+	"determine_expected_results_lavagna_4":"DetermineExpectedResultsExamples",
+	"documento":"TestCase"
+
+
 }

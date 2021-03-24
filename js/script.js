@@ -224,6 +224,7 @@ function click(elem) {
         $("#min2 .close").remove();
         $("#min3 svg").remove();
         $("#min3 .close").remove();
+				h=["main"]
       });
     } else if ($("#min svg").length > 0 && $("#min2 svg").length > 0) {
       // min is full, min2 is full, append the content to min3
@@ -235,6 +236,7 @@ function click(elem) {
         $("#main-content .row").remove();
         $("#min3 svg").appendTo("#main-content")
         $("#min3 .close").remove();
+				h=["main"]
       });
 
     } else {
@@ -250,6 +252,7 @@ function click(elem) {
         $("#min3 .close").remove();
         $("#min svg").appendTo("#main-content")
         $("#min .close").remove();
+				h=["main"]
       });
     }
   } else if (isInMin2) {

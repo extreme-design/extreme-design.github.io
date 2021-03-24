@@ -470,6 +470,118 @@
       "title": "Stable Ontology",
       "body": "TBD"
     }
+	},
+	"CreateSmallerStoriesRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Create Smaller Stories''",
+      "body": "TBD"
+    }
+	},
+	"EstablishGeneralConstraintsRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Establish General Requirments and Competency Questions''",
+      "body": "TBD"
+    }
+	},
+	"EstablishGeneralConstraintsExamples" : {
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Establish General Requirments and Competency Questions''",
+      "body": "TBD"
+    }
+	},
+	"CreateSmallerStoriesExamples" : {
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Create Smaller Stories''",
+      "body": "TBD"
+    }
+	},
+	"FormulateTestProceduresRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Formulate Test Procedures''",
+      "body": "TBD"
+    }
+	},
+	"DefineTestCaseRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Define Test Case''",
+      "body": "TBD"
+    }
+	},
+	"AddTestDataRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Add Test Data''",
+      "body": "TBD"
+    }
+	},
+	"DetermineExpectedResultsRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''DetermineExpectedResults''",
+      "body": "TBD"
+    }
+	},
+	"FormulateTestProceduresTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Formulate Test Procedure''",
+      "body": "TBD"
+    }
+	},
+	"DefineTestCaseTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Define Test Case''",
+      "body": "TBD"
+    }
+	},
+	"AddTestDataTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Add Test Data''",
+      "body": "TBD"
+    }
+	},
+	"DetermineExpectedResultsTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Determine Expected Results''",
+      "body": "TBD"
+    }
+	},
+	"FormulateTestProceduresExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Formulate Test Procedures''",
+      "body": "TBD"
+    }
+	},
+	"DefineTestCaseExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Define Test Cases''",
+      "body": "TBD"
+    }
+	},
+	"AddTestDataExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Add Test Data''",
+      "body": "TBD"
+    }
+	},
+	"DetermineExpectedResultsExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Detemine Expected Results''",
+      "body": "TBD"
+    }
 	}
 
 
