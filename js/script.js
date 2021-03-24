@@ -6,7 +6,7 @@ var text;
 var classes;
 
 debug = console.log
-//debug = function() {}
+debug = function() {}
 
 $('a[nav-button]').click(clicklink);
 
@@ -85,19 +85,25 @@ function setActionJQuery(clazz, action, svg) {
         ev.stopPropagation();
         click($(this))
         loadSVG(action[e]["path"], "#main-content", mapCallBack);
+        h = ["main"]
       });
       $("." + clazz).attr("clickable", "true")
 
     } else if (action[e]["type"] == "text") {
       $("." + clazz + ":not([clickable])").on(e, function(ev) {
         ev.stopPropagation();
-        debug("Click on " + clazz)
-        click($(this));
-        var toappend = getText(action[e]["title"], action[e]["body"], action[e]["background"], action[e]["color"], null, clazz);
-        $("#main-content .row").remove();
-        $("#main-content").append(toappend);
-				h.push(clazz);
-        $('a:not([nav-button])').click(clicklink);
+        if (h[h.length - 1] != clazz) {
+          debug("Click on " + clazz)
+          click($(this));
+          var toappend = getText(action[e]["title"], action[e]["body"], action[e]["background"], action[e]["color"], null, clazz);
+          $("#main-content .row").remove();
+          $("#main-content").append(toappend);
+          h.push(clazz);
+					debug(h)
+          $('a:not([nav-button])').click(clicklink);
+        }else{
+					debug("do nop")
+				}
       });
     }
   }
@@ -120,23 +126,26 @@ function clicklink(e2) {
     debug(interaction[ref]["click"]["title"])
 
     if ($(this).attr("back")) {
-      debug("POP "+h.pop());
-			if(h[h.length-1]!="main")
-				debug("POP "+h.pop());
-			debug(h[h.length-1])
+      debug("POP " + h.pop());
+      if (h[h.length - 1] != "main")
+        debug("POP " + h.pop());
+      debug(h[h.length - 1])
     }
 
     //if ($(this).parent().attr("key") != undefined) {
-      //h.push($(this).parent().attr("key"));
+    //h.push($(this).parent().attr("key"));
     //}
 
     var toappend2 = getText(interaction[ref]["click"]["title"], interaction[ref]["click"]["body"], interaction[ref]["click"]["background"], interaction[ref]["click"]["color"], $(this).parent().attr("key"), ref);
     $("#main-content .row").remove();
     $("#main-content").append(toappend2)
 
-		if (!$(this).attr("back")) {
+    debug("hey here")
+    //if (!$(this).attr("back")) {
+    if (h[h.length - 1] != $(this).attr("href")) {
       h.push($(this).attr("href"))
     }
+    //}
 
     $('a:not([nav-button])').click(clicklink);
   }
@@ -166,9 +175,9 @@ function getText(title, body, background, color, back, key) {
 									<div>`;
 
 
-    if (h[h.length - 1] != "main") {
-      result += `<a href="${h[h.length-1]}" style="text-decoration: none;" back="true"><i class="fas fa-arrow-left"></i> Back</a>`;
-    }
+  if (h[h.length - 1] != "main") {
+    result += `<a href="${h[h.length-1]}" style="text-decoration: none;" back="true"><i class="fas fa-arrow-left"></i> Back</a>`;
+  }
 
 
   result += `
