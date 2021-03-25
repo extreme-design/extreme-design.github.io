@@ -107,7 +107,25 @@
 	"determine_expected_results_cappello_4":"DetermineExpectedResultsRoles",
 	"determine_expected_results_tools_4":"DetermineExpectedResultsTools",
 	"determine_expected_results_lavagna_4":"DetermineExpectedResultsExamples",
-	"documento":"TestCase"
+	"documento":"TestCase",
 
+	"match_CQ_with_ontology_design_patterns_ODP_roles":"MatchCQWithODPRoles",
+	"match_CQ_with_ontology_design_patterns_ODP_tools":"MatchCQWithODPTools",
+	"match_CQ_with_ontology_design_patterns_ODP_examples":"MatchCQWithODPExamples",
+	"create_the_pattern_roles":"CreateThePatternRoles",
+	"create_the_pattern_tools":"CreateThePatternTools",
+	"create_the_pattern_examples":"CreateThePatternExamples",
+	"integrate_the_pattern_roles":"IntegrateThePatternRoles",
+	"integrate_the_pattern_tools":"IntegrateThePatternTools",
+	"integrate_the_pattern_examples":"IntegrateThePatternExamples",
+	"alpha_version_ontology":"AlphaVersionOntology",
+
+	"Substitute_ephemeral_prefixes_roles":"SubstituteEphemeralPrefixesRoles",
+	"Substitute_ephemeral_prefixes_tools":"SubstituteEphemeralPrefixesTools",
+	"Substitute_ephemeral_prefixes_examples":"SubstituteEphemeralPrefixesExamples",
+	"document_roles":"DocumentRoles",
+	"document_tools":"DocumentTools",
+	"document_examples":"DocumentExamples",
+	"grafico":"TestRunResults"
 
 }

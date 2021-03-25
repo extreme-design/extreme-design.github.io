@@ -6,7 +6,7 @@ var text;
 var classes;
 
 debug = console.log
-debug = function() {}
+//debug = function() {}
 
 $('a[nav-button]').click(clicklink);
 
@@ -225,6 +225,7 @@ function click(elem) {
         $("#min3 svg").remove();
         $("#min3 .close").remove();
 				h=["main"]
+				debug(h)
       });
     } else if ($("#min svg").length > 0 && $("#min2 svg").length > 0) {
       // min is full, min2 is full, append the content to min3
@@ -237,6 +238,7 @@ function click(elem) {
         $("#min3 svg").appendTo("#main-content")
         $("#min3 .close").remove();
 				h=["main"]
+				debug(h)
       });
 
     } else {

@@ -148,7 +148,7 @@
 		<text transform="matrix(1 0 0 1 295.167 353.722)" font-family="'BebasNeue'" font-size="20.6503">YES</text>
 	</g>
 </g>
-<g id="grafo">
+<g id="alpha_version_ontology">
 	<path fill="#FAB537" d="M512.797,587.649c0,2.86-1.591,5.178-3.553,5.178H392.794c-1.962,0-3.553-2.318-3.553-5.178v-95.97
 		c0-2.86,1.591-5.178,3.553-5.178h116.449c1.962,0,3.553,2.318,3.553,5.178V587.649z"/>
 	<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M510.51,590.791c0,2.86-1.591,5.178-3.553,5.178
@@ -163,7 +163,7 @@
 		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="443.496" y1="560.737" x2="423.722" y2="530.654"/>
 	</g>
 </g>
-<g id="lavagna_1">
+<g id="match_CQ_with_ontology_design_patterns_ODP_examples">
 	<circle fill="#514998" cx="506.565" cy="44.602" r="23.692"/>
 	<g>
 		<path fill="#FFFFFF" d="M494.04,32.522V54.96h17.128c0-0.486,0-0.972,0-1.458h-15.84V33.98h22.535v11.13c0.418,0,0.852,0,1.288,0
@@ -172,7 +172,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="510.88" y1="45.421" x2="521.574" y2="56.116"/>
 	</g>
 </g>
-<g id="tools_1">
+<g id="match_CQ_with_ontology_design_patterns_ODP_tools">
 	<g id="Tools_1_3_">
 		<circle fill="#72B62B" cx="443.276" cy="44.775" r="23.176"/>
 	</g>
@@ -195,7 +195,7 @@
 			l-2.382,2.382l3.543,3.28l2.244-2.244c2.092,0.792,4.546,0.343,6.229-1.34C459.303,41.032,459.817,38.914,459.342,36.987z"/>
 	</g>
 </g>
-<g id="cappello_1">
+<g id="match_CQ_with_ontology_design_patterns_ODP_roles">
 	<circle fill="#D02517" cx="379.959" cy="44.462" r="23.225"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M389.825,44.58c-0.081-0.879-0.165-1.902-0.242-3.02
@@ -211,7 +211,7 @@
 		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="389.825" y1="44.58" x2="390.102" y2="48.301"/>
 	</g>
 </g>
-<g id="lavagna_2">
+<g id="create_the_pattern_examples">
 	<circle fill="#514998" cx="830.193" cy="265.576" r="23.692"/>
 	<g>
 		<path fill="#FFFFFF" d="M817.668,253.497v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84v-19.522h22.535v11.13
@@ -220,7 +220,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="834.508" y1="266.396" x2="845.202" y2="277.09"/>
 	</g>
 </g>
-<g id="tools_2">
+<g id="create_the_pattern_tools">
 	<g id="Tools_1_1_">
 		<circle fill="#72B62B" cx="766.905" cy="265.749" r="23.176"/>
 	</g>
@@ -243,7 +243,7 @@
 			l-2.382,2.382l3.543,3.28l2.244-2.244c2.092,0.792,4.547,0.343,6.229-1.34C782.931,262.007,783.446,259.889,782.971,257.962z"/>
 	</g>
 </g>
-<g id="cappello_2">
+<g id="create_the_pattern_roles">
 	<circle fill="#D02517" cx="703.587" cy="265.437" r="23.225"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M713.454,265.554c-0.081-0.879-0.165-1.902-0.242-3.02
@@ -259,7 +259,7 @@
 		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="713.454" y1="265.554" x2="713.73" y2="269.275"/>
 	</g>
 </g>
-<g id="lavagna_4_2_">
+<g id="integrate_the_pattern_examples">
 	<circle fill="#514998" cx="206.758" cy="265.576" r="23.692"/>
 	<g>
 		<path fill="#FFFFFF" d="M194.233,253.497v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84v-19.522h22.535v11.13
@@ -268,7 +268,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="211.073" y1="266.396" x2="221.768" y2="277.09"/>
 	</g>
 </g>
-<g id="tools_3">
+<g id="integrate_the_pattern_tools">
 	<g id="Tools_1_2_">
 		<circle fill="#72B62B" cx="143.47" cy="265.749" r="23.176"/>
 	</g>
@@ -291,7 +291,7 @@
 			l-2.382,2.382l3.543,3.28l2.244-2.244c2.092,0.792,4.546,0.343,6.229-1.34C159.496,262.007,160.011,259.889,159.536,257.962z"/>
 	</g>
 </g>
-<g id="cappello_3">
+<g id="integrate_the_pattern_roles">
 	<circle fill="#D02517" cx="80.152" cy="265.437" r="23.225"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M90.019,265.554c-0.081-0.879-0.165-1.902-0.242-3.02

@@ -582,6 +582,111 @@
       "title": "Examples of ''Detemine Expected Results''",
       "body": "TBD"
     }
+	},
+	"MatchCQWithODPExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Match CQ with ODPs''",
+      "body": "TBD"
+    }
+	},
+	"CreateThePatternExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Create the Pattern''",
+      "body": "TBD"
+    }
+	},
+	"IntegrateThePatternExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Integrate the Pattern''",
+      "body": "TBD"
+    }
+	},
+	"MatchCQWithODPTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Match CQ with ODPs''",
+      "body": "TBD"
+    }
+	},
+	"CreateThePatternTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Create the Pattern''",
+      "body": "TBD"
+    }
+	},
+	"IntegrateThePatternTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Integrate the Pattern''",
+      "body": "TBD"
+    }
+	},
+	"MatchCQWithODPRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Match CQ with ODPs''",
+      "body": "TBD"
+    }
+	},
+	"CreateThePatternRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Create the Pattern''",
+      "body": "TBD"
+    }
+	},
+	"IntegrateThePatternRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Integrate The Pattern''",
+      "body": "TBD"
+    }
+	},
+	"SubstituteEphemeralPrefixesRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Substitute Ephemeral Prefixes''",
+      "body": "TBD"
+    }
+	},
+	"DocumentRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Document''",
+      "body": "TBD"
+    }
+	},
+	"SubstituteEphemeralPrefixesTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Substitute Ephemeral Prefixes''",
+      "body": "TBD"
+    }
+	},
+	"DocumentTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Document''",
+      "body": "TBD"
+    }
+	},
+	"SubstituteEphemeralPrefixesExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Substitute Ephemeral Prefixes''",
+      "body": "TBD"
+    }
+	},
+	"DocumentExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Document''",
+      "body": "TBD"
+    }
 	}
 
 
