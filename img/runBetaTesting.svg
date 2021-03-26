@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="841.89px" height="595.28px" viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve">
-<g id="grafo_1">
+<g id="alpha_version_ontology">
 	<path fill="#EF7928" stroke="#EE7828" stroke-miterlimit="10" d="M185.895,148.343c0,2.86-1.591,5.178-3.553,5.178H65.893
 		c-1.962,0-3.553-2.318-3.553-5.178v-95.97c0-2.86,1.591-5.178,3.553-5.178h116.449c1.962,0,3.553,2.318,3.553,5.178V148.343z"/>
 	<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M183.608,151.484c0,2.86-1.591,5.178-3.553,5.178
@@ -76,7 +76,7 @@
 		</g>
 	</g>
 </g>
-<g id="cerchio_4">
+<g id="refactor_and_integrate">
 
 		<ellipse fill="#B2116C" stroke="#B2116C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="418.862" cy="463.321" rx="83.071" ry="65.45"/>
 

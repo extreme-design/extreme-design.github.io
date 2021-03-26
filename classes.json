@@ -119,6 +119,7 @@
 	"integrate_the_pattern_tools":"IntegrateThePatternTools",
 	"integrate_the_pattern_examples":"IntegrateThePatternExamples",
 	"alpha_version_ontology":"AlphaVersionOntology",
+	"unstable_ontology":"UnstableOntology",
 
 	"Substitute_ephemeral_prefixes_roles":"SubstituteEphemeralPrefixesRoles",
 	"Substitute_ephemeral_prefixes_tools":"SubstituteEphemeralPrefixesTools",
@@ -126,6 +127,7 @@
 	"document_roles":"DocumentRoles",
 	"document_tools":"DocumentTools",
 	"document_examples":"DocumentExamples",
-	"grafico":"TestRunResults"
+	"grafico":"TestRunResults",
+	"refactor_and_integrate":"RefactorAndIntegrate"
 
 }
