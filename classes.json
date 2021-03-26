@@ -141,6 +141,8 @@
 
 	"publish_the_ontology_roles":"PublishTheOntologyRoles",
 	"publish_the_ontology_tools":"PublishTheOntologyTools",
-	"publish_the_ontology_examples":"PublishTheOntologyExamples"
+	"publish_the_ontology_examples":"PublishTheOntologyExamples",
+
+	"Refactor_and_integrate":"RefactorAndIntegrate"
 
 }
