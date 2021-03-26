@@ -22,7 +22,7 @@ $(document).ready(function() {
 });
 
 window.addEventListener("load", function() {
-  loadSVG("img/schema1.svg", "#main-content", mapCallBack, "General Process");
+  loadSVG("img/schema1.svg", "#main-content", mapCallBack, null);
 });
 
 function setInteraction(inter) {
@@ -292,7 +292,7 @@ function loadSVG(file, selector, callback,title) {
     svg.append("<defs><style type=\"text/css\">@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');</style></defs>");
     callback();
 
-		if(selector=="#main-content"){
+		if(selector=="#main-content" && title != null){
 			elem.prepend(`<h1 id="title-content" style="text-align:center; font-family: 'Bebas Neue'">${title}</h1>`);
 		}
   });
