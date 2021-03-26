@@ -2,7 +2,8 @@
   "FormalizeRequirements": {
     "click": {
       "type": "svg",
-      "path": "img/schema2.svg"
+      "path": "img/schema2.svg",
+			"title":"Formalize Requirements"
     }
   },
   "CollectRequirements": {
@@ -22,31 +23,36 @@
   "DefineTestCase": {
     "click": {
       "type": "svg",
-      "path": "img/defineTestCases.svg"
+      "path": "img/defineTestCases.svg",
+			"title":"Define Test Case"
     }
   },
   "DevelopModules": {
     "click": {
       "type": "svg",
-      "path": "img/developModule.svg"
+      "path": "img/developModule.svg",
+			"title":"Develop Modules"
     }
   },
   "RunAlphaTesting": {
     "click": {
       "type": "svg",
-      "path": "img/runAlphaTesting.svg"
+      "path": "img/runAlphaTesting.svg",
+			"title":"Run Alpha Testing"
     }
   },
   "RunBetaTesting": {
     "click": {
       "type": "svg",
-      "path": "img/runBetaTesting.svg"
+      "path": "img/runBetaTesting.svg",
+			"title":"Run Beta Testing"
     }
   },
   "PublishStableRelease": {
     "click": {
       "type": "svg",
-      "path": "img/publishStableRelease.svg"
+      "path": "img/publishStableRelease.svg",
+			"title":"Publish Release"
     }
   },
   "CreateSmallerStories": {

@@ -22,7 +22,7 @@ $(document).ready(function() {
 });
 
 window.addEventListener("load", function() {
-  loadSVG("img/schema1.svg", "#main-content", mapCallBack);
+  loadSVG("img/schema1.svg", "#main-content", mapCallBack, "General Process");
 });
 
 function setInteraction(inter) {
@@ -84,7 +84,7 @@ function setActionJQuery(clazz, action, svg) {
       $("." + clazz + ":not([clickable])").on(e, function(ev) {
         ev.stopPropagation();
         click($(this))
-        loadSVG(action[e]["path"], "#main-content", mapCallBack);
+        loadSVG(action[e]["path"], "#main-content", mapCallBack, action[e]["title"]);
         h = ["main"]
       });
       $("." + clazz).attr("clickable", "true")
@@ -92,6 +92,7 @@ function setActionJQuery(clazz, action, svg) {
     } else if (action[e]["type"] == "text") {
       $("." + clazz + ":not([clickable])").on(e, function(ev) {
         ev.stopPropagation();
+				$("#title-content").remove()
         if (h[h.length - 1] != clazz) {
           debug("Click on " + clazz)
           click($(this));
@@ -148,6 +149,8 @@ function clicklink(e2) {
     //}
 
     $('a:not([nav-button])').click(clicklink);
+
+		$("#title-content").remove();
   }
 }
 
@@ -266,10 +269,14 @@ function click(elem) {
   }
 }
 
-function loadSVG(file, selector, callback) {
+function loadSVG(file, selector, callback,title) {
   debug("load svg " + file)
   elem = $(selector)
+
+
+
   elem.load(file, function() {
+
     var svg = elem.find("svg");
     svg.removeAttr("enable-background");
     svg.removeAttr("width");
@@ -284,7 +291,12 @@ function loadSVG(file, selector, callback) {
     //svg.append("<defs><style type=\"text/css\">@import url('http://fonts.googleapis.com/css?family=Bebas+Neue');</style></defs>");
     svg.append("<defs><style type=\"text/css\">@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');</style></defs>");
     callback();
+
+		if(selector=="#main-content"){
+			elem.prepend(`<h1 id="title-content" style="text-align:center; font-family: 'Bebas Neue'">${title}</h1>`);
+		}
   });
+
 
 }
 
