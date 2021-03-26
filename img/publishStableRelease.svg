@@ -4,8 +4,8 @@
 <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1249.352px" height="595.28px" viewBox="0 0 1249.352 595.28" enable-background="new 0 0 1249.352 595.28"
 	 xml:space="preserve">
-<g id="grafo_1">
-	<path fill="#FAB537" d="M364.704,191.757c0,2.86-1.591,5.178-3.553,5.178H244.701c-1.962,0-3.553-2.318-3.553-5.178v-95.97
+<g id="alpha_version_ontology">
+	<path fill="#EF7928" d="M364.704,191.757c0,2.86-1.591,5.178-3.553,5.178H244.701c-1.962,0-3.553-2.318-3.553-5.178v-95.97
 		c0-2.86,1.591-5.178,3.553-5.178H361.15c1.962,0,3.553,2.318,3.553,5.178V191.757z"/>
 	<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M362.417,194.898c0,2.86-1.591,5.178-3.553,5.178
 		H242.414c-1.962,0-3.553-2.318-3.553-5.178v-95.97c0-2.86,1.591-5.178,3.553-5.178h116.449c1.962,0,3.553,2.318,3.553,5.178
@@ -19,7 +19,7 @@
 		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="295.403" y1="164.845" x2="275.629" y2="134.761"/>
 	</g>
 </g>
-<g id="grafo_2">
+<g id="stable_ontology">
 	<path fill="#8EBF22" d="M662.04,517.672c0,2.86-1.591,5.178-3.553,5.178H542.037c-1.962,0-3.553-2.318-3.553-5.178v-95.97
 		c0-2.86,1.591-5.178,3.553-5.178h116.449c1.962,0,3.553,2.318,3.553,5.178V517.672z"/>
 	<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M659.753,520.813c0,2.86-1.591,5.178-3.553,5.178
@@ -99,7 +99,7 @@
 		</g>
 	</g>
 </g>
-<g id="lavagna_1">
+<g id="add_annotatiotations_examples">
 	<circle fill="#514998" cx="648.169" cy="42.91" r="23.692"/>
 	<g>
 		<path fill="#FFFFFF" d="M635.644,30.83v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84V32.288h22.535v11.13
@@ -108,7 +108,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="652.484" y1="43.729" x2="663.179" y2="54.424"/>
 	</g>
 </g>
-<g id="tools_1">
+<g id="add_annoations_tools">
 	<g id="Tools_1_3_">
 		<circle fill="#72B62B" cx="584.881" cy="43.083" r="23.176"/>
 	</g>
@@ -131,7 +131,7 @@
 			l-2.382,2.382l3.543,3.28l2.244-2.244c2.092,0.792,4.546,0.343,6.229-1.34C600.907,39.34,601.422,37.222,600.947,35.295z"/>
 	</g>
 </g>
-<g id="cappello_1">
+<g id="add_annotatiotations_roles">
 	<circle fill="#D02517" cx="521.564" cy="42.77" r="23.225"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M531.43,42.888c-0.081-0.879-0.165-1.902-0.242-3.02
@@ -147,7 +147,7 @@
 		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="531.43" y1="42.888" x2="531.706" y2="46.609"/>
 	</g>
 </g>
-<g id="lavagna_2">
+<g id="add_examples_examples">
 	<circle fill="#514998" cx="955.616" cy="42.91" r="23.692"/>
 	<g>
 		<path fill="#FFFFFF" d="M943.091,30.83v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84V32.288h22.535v11.13
@@ -156,7 +156,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="959.931" y1="43.729" x2="970.625" y2="54.424"/>
 	</g>
 </g>
-<g id="tools_2">
+<g id="add_examples_tools">
 	<g id="Tools_1_1_">
 		<circle fill="#72B62B" cx="892.328" cy="43.083" r="23.176"/>
 	</g>
@@ -179,7 +179,7 @@
 			l-2.382,2.382l3.543,3.28l2.244-2.244c2.092,0.792,4.547,0.343,6.229-1.34C908.354,39.34,908.869,37.222,908.393,35.295z"/>
 	</g>
 </g>
-<g id="cappello_2">
+<g id="add_examples_roles">
 	<circle fill="#D02517" cx="829.01" cy="42.77" r="23.225"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M838.876,42.888c-0.081-0.879-0.165-1.902-0.242-3.02
@@ -195,7 +195,7 @@
 		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="838.876" y1="42.888" x2="839.153" y2="46.609"/>
 	</g>
 </g>
-<g id="lavagna_3">
+<g id="publish_the_ontology_examples">
 	<circle fill="#514998" cx="955.616" cy="362.187" r="23.692"/>
 	<g>
 		<path fill="#FFFFFF" d="M943.091,350.107v22.438h17.128c0-0.486,0-0.972,0-1.458h-15.84v-19.522h22.535v11.13
@@ -204,7 +204,7 @@
 			<line fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="959.931" y1="363.006" x2="970.625" y2="373.701"/>
 	</g>
 </g>
-<g id="tools_3">
+<g id="publish_the_ontology_tools">
 	<g id="Tools_1_2_">
 		<circle fill="#72B62B" cx="892.328" cy="362.36" r="23.176"/>
 	</g>
@@ -227,7 +227,7 @@
 			l-2.382,2.382l3.543,3.28l2.244-2.244c2.092,0.792,4.547,0.343,6.229-1.34C908.354,358.618,908.869,356.499,908.393,354.573z"/>
 	</g>
 </g>
-<g id="cappello_3">
+<g id="publish_the_ontology_roles">
 	<circle fill="#D02517" cx="829.01" cy="362.048" r="23.225"/>
 	<g>
 		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M838.876,362.165c-0.081-0.879-0.165-1.902-0.242-3.02

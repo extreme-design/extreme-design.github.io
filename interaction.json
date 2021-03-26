@@ -687,6 +687,69 @@
       "title": "Examples of ''Document''",
       "body": "TBD"
     }
+	},
+	"AddAnnotationsExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Add Annotations''",
+      "body": "TBD"
+    }
+	},
+	"AddExamplesExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Add Examples''",
+      "body": "TBD"
+    }
+	},
+	"PublishTheOntologyExamples":{
+		"click": {
+      "type": "text",
+      "title": "Examples of ''Publish The Ontology''",
+      "body": "TBD"
+    }
+	},
+	"AddAnnotationsRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Add Annotations''",
+      "body": "TBD"
+    }
+	},
+	"AddExamplesRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Add Examples''",
+      "body": "TBD"
+    }
+	},
+	"PublishTheOntologyRoles" : {
+		"click": {
+      "type": "text",
+      "title": "Roles involved in ''Publish The Ontology''",
+      "body": "TBD"
+    }
+	},
+	"AddAnnotationsTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Add Annotations''",
+      "body": "TBD"
+    }
+	},
+	"AddExamplesTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Add Examples''",
+      "body": "TBD"
+    }
+	},
+	"PublishTheOntologyTools":{
+		"click": {
+      "type": "text",
+      "title": "Tools for ''Publish The Ontology''",
+      "body": "TBD"
+    }
 	}
 
 

@@ -128,6 +128,19 @@
 	"document_tools":"DocumentTools",
 	"document_examples":"DocumentExamples",
 	"grafico":"TestRunResults",
-	"refactor_and_integrate":"RefactorAndIntegrate"
+	"refactor_and_integrate":"RefactorAndIntegrate",
+	"stable_ontology":"StableOntology",
+
+	"add_annotatiotations_roles":"AddAnnotationsRoles",
+	"add_annoations_tools":"AddAnnotationsTools",
+	"add_annotatiotations_examples":"AddAnnotationsExamples",
+
+	"add_examples_roles":"AddExamplesRoles",
+	"add_examples_tools":"AddExamplesTools",
+	"add_examples_examples":"AddExamplesExamples",
+
+	"publish_the_ontology_roles":"PublishTheOntologyRoles",
+	"publish_the_ontology_tools":"PublishTheOntologyTools",
+	"publish_the_ontology_examples":"PublishTheOntologyExamples"
 
 }
