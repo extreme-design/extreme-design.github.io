@@ -22,7 +22,7 @@ $(document).ready(function() {
 });
 
 window.addEventListener("load", function() {
-  loadSVG("img/schema1.svg", "#main-content", mapCallBack, null);
+  loadSVG("img/schema1.svg", "#main-content", mapCallBack, "General Process");
 });
 
 function setInteraction(inter) {
@@ -223,7 +223,8 @@ function click(elem) {
       $("#min2 .close").on("click", function() {
         $("#main-content svg").remove();
         $("#main-content .row").remove();
-        $("#min2 svg").appendTo("#main-content")
+        $("#min2 svg").appendTo("#main-content");
+				$("#main-content").prepend(`<h1 id="title-content" style="text-align:center; font-family: 'Bebas Neue'">${$("#main-content svg").attr("title")}</h1>`);
         $("#min2 .close").remove();
         $("#min3 svg").remove();
         $("#min3 .close").remove();
@@ -239,6 +240,9 @@ function click(elem) {
         $("#main-content svg").remove();
         $("#main-content .row").remove();
         $("#min3 svg").appendTo("#main-content")
+
+				$("#main-content").prepend(`<h1 id="title-content" style="text-align:center; font-family: 'Bebas Neue'">${$("#main-content svg").attr("title")}</h1>`);
+
         $("#min3 .close").remove();
 				h=["main"]
 				debug(h)
@@ -255,8 +259,9 @@ function click(elem) {
         $("#min2 .close").remove();
         $("#min3 svg").remove();
         $("#min3 .close").remove();
-        $("#min svg").appendTo("#main-content")
-        $("#min .close").remove();
+        $("#min svg").appendTo("#main-content");
+				$("#main-content").prepend(`<h1 id="title-content" style="text-align:center; font-family: 'Bebas Neue'">${$("#main-content svg").attr("title")}</h1>`);
+				$("#min .close").remove();
 				h=["main"]
       });
     }
@@ -283,6 +288,7 @@ function loadSVG(file, selector, callback,title) {
     svg.removeAttr("height");
     svg.removeAttr("x");
     svg.removeAttr("y");
+		svg.attr("title",title);
     svg.attr("height", "100%");
     svg.attr("width", "100%");
     svg.attr("filename", file)
