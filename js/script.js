@@ -156,8 +156,6 @@ function clicklink(e2) {
 
 function getText(title, body, background, color, back, key) {
 
-  debug("Color " + color)
-
   if (background == null) {
     background = "#99ccff";
   }
@@ -168,6 +166,22 @@ function getText(title, body, background, color, back, key) {
 
   debug("Color " + color)
   debug(h)
+
+	var symbols="";
+
+
+
+	if(key+"Roles" in interaction){
+		symbols += `<a href="${key}Roles"><img src="img/roles.svg"></a>`
+	}
+
+	if(key+"Tools" in interaction){
+		symbols += `<a href="${key}Tools"><img src="img/tools.svg"></a>`
+	}
+
+	if(key+"Examples" in interaction){
+		symbols += `<a href="${key}Examples"><img src="img/examples.svg"></a>`
+	}
 
   var result = `
     <div class="row text-content" style="height:100%;">
@@ -185,7 +199,7 @@ function getText(title, body, background, color, back, key) {
 
   result += `
 
-										<h1 style="color: ${color}; font-family: 'Bebas Neue'; font-size: 2.5rem;">${title}</h1>
+										<h1 style="color: ${color}; font-family: 'Bebas Neue'; font-size: 2.5rem;">${title} ${symbols}</h1>
 										<p style="color: ${color};" key="${key}">${body}</p>
 									</div>
 								</div>
