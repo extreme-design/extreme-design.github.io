@@ -224,6 +224,7 @@ function click(elem) {
         $("#main-content svg").remove();
         $("#main-content .row").remove();
         $("#min2 svg").appendTo("#main-content");
+				$("#title-content").remove()
 				$("#main-content").prepend(`<h1 id="title-content" style="text-align:center; font-family: 'Bebas Neue'">${$("#main-content svg").attr("title")}</h1>`);
         $("#min2 .close").remove();
         $("#min3 svg").remove();
@@ -239,6 +240,7 @@ function click(elem) {
       $("#min3 .close").on("click", function() {
         $("#main-content svg").remove();
         $("#main-content .row").remove();
+				$("#title-content").remove()
         $("#min3 svg").appendTo("#main-content")
 
 				$("#main-content").prepend(`<h1 id="title-content" style="text-align:center; font-family: 'Bebas Neue'">${$("#main-content svg").attr("title")}</h1>`);
@@ -260,6 +262,7 @@ function click(elem) {
         $("#min3 svg").remove();
         $("#min3 .close").remove();
         $("#min svg").appendTo("#main-content");
+				$("#title-content").remove()
 				$("#main-content").prepend(`<h1 id="title-content" style="text-align:center; font-family: 'Bebas Neue'">${$("#main-content svg").attr("title")}</h1>`);
 				$("#min .close").remove();
 				h=["main"]
@@ -298,9 +301,11 @@ function loadSVG(file, selector, callback,title) {
     svg.append("<defs><style type=\"text/css\">@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');</style></defs>");
     callback();
 
+
 		if(selector=="#main-content" && title != null){
 			elem.prepend(`<h1 id="title-content" style="text-align:center; font-family: 'Bebas Neue'">${title}</h1>`);
 		}
+
   });
 
 
